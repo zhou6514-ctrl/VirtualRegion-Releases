@@ -1,0 +1,5 @@
+*.apk
+*.aab
+mapping.txt
+*.keystore
+*.jks

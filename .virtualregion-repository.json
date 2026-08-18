@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "role": "release",
+  "sourceRepository": {
+    "slug": "zhou6514-ctrl/VirtualRegion",
+    "url": "https://github.com/zhou6514-ctrl/VirtualRegion"
+  },
+  "releaseRepository": {
+    "slug": "zhou6514-ctrl/VirtualRegion-Releases",
+    "url": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases",
+    "metadataPath": "latest.json"
+  },
+  "binaryStorage": "github-releases"
+}
