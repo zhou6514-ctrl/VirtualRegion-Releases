@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 10,
-  "versionName": "0.1.9",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.1.9/VirtualRegion-0.1.9.apk",
+  "versionCode": 11,
+  "versionName": "0.2.0",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.0/VirtualRegion-0.2.0.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "0f4b0ea60b87e163575ea29ff7028ec30b8e505617aab3a0cf239c81bf9d04d6",
+  "sha256": "5ad56eeec13574fb4fdfe2f7d845f46520c416c5187eef58be5938bbe2226b9f",
   "releaseNotes": {
     "zh-CN": "- 适配 Android 17，并完成轻量虚拟机 Hook 验证。\n- 系统保存的 WiFi 改为用户授权后的 Root 读取，移除旧系统接口。\n- 优化管理器标题栏、地图操作栏和列表显示。\n- APK 使用独立发布仓，并增加启动后台更新检查。",
     "en": "- Added Android 17 support and verified hooks in a lightweight virtual device.\n- Replaced the legacy saved-WiFi system bridge with explicit Root access.\n- Refined manager toolbars, map controls, and list presentation.\n- Moved APKs to a dedicated release repository and added background update checks."
   },
   "apkSize": 66942184,
-  "publishedAt": "2026-08-18T18:06:29Z"
+  "publishedAt": "2026-08-18T18:11:05Z"
 }
