@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 11,
-  "versionName": "0.2.0",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.0/VirtualRegion-0.2.0.apk",
+  "versionCode": 12,
+  "versionName": "0.2.1",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.1/VirtualRegion-0.2.1.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "1d627cdd5e64a3d095a081013d5fff0842aa9545ecaed2a3c874380cb24d91c9",
+  "sha256": "5447074f386656eda3e25901361d30cb701b6b060041a4f9221447eafedf59b7",
   "releaseNotes": {
-    "zh-CN": "- 适配 Android 17，并完成轻量虚拟机 Hook 验证。\n- 系统保存的 WiFi 改为用户授权后的 Root 读取，移除旧系统接口。\n- 优化管理器标题栏、地图操作栏和列表显示。\n- APK 使用独立发布仓，并增加启动后台更新检查。",
-    "en": "- Added Android 17 support and verified hooks in a lightweight virtual device.\n- Replaced the legacy saved-WiFi system bridge with explicit Root access.\n- Refined manager toolbars, map controls, and list presentation.\n- Moved APKs to a dedicated release repository and added background update checks."
+    "zh-CN": "- 虚拟位置会平缓地小范围变化，减少位置突然跳动。\n- 地图选点时生成的附近 Wi-Fi 信息更加丰富，名称、信号强弱和网络类型更自然。\n- 刷新附近 Wi-Fi 时保留用户已有的 Wi-Fi，不再每次都重新生成。\n- 改善蓝牙设备搜索结果的兼容性，适配更多手机系统。\n- 修复部分系统读取位置和蓝牙搜索结果不完整或不稳定的问题。",
+    "en": "- Virtual locations now move gently within a small area instead of jumping between fixes.\n- Nearby Wi-Fi data generated from a map selection now has more varied names, signal levels, and network types.\n- Existing user Wi-Fi records are kept when nearby Wi-Fi is refreshed.\n- Improved Bluetooth discovery compatibility across more phone systems.\n- Fixed incomplete or unstable location and Bluetooth discovery results on some systems."
   },
-  "apkSize": 66942576,
-  "publishedAt": "2026-08-18T18:33:46Z"
+  "apkSize": 66958960,
+  "publishedAt": "2026-08-19T17:23:40Z"
 }
