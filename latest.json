@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 13,
-  "versionName": "0.2.2",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.2/VirtualRegion-0.2.2.apk",
-  "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/tag/v0.2.2",
-  "sha256": "28312e7d782c3eedbed0ad55553801dec8510f3fa119432af7567ca4354e21b8",
+  "versionCode": 14,
+  "versionName": "0.2.3",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.3/VirtualRegion-0.2.3.apk",
+  "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
+  "sha256": "2c8df0ad7f1f488e0e2779dde5ba2e809d0546425ebc72c877fc46c8bc3501b5",
   "releaseNotes": {
-    "zh-CN": "- 采集环境时会保存更完整的附近低功耗蓝牙广播内容。\n- 虚拟蓝牙会按照记录下来的节奏持续返回设备，不再只出现一次。\n- 蓝牙信号强弱会有小范围自然变化，设备之间的出现时间也会错开。\n- 支持按设备地址和广播中的服务信息筛选蓝牙结果。\n- 改善 Android 11 至 Android 17 的蓝牙扫描兼容性。\n- 修复部分手机蓝牙扫描内容缺失或停止后仍收到结果的问题。",
-    "en": "- Environment capture now keeps more complete nearby Bluetooth Low Energy broadcast data.\n- Virtual Bluetooth devices now continue to appear at their recorded pace instead of appearing only once.\n- Bluetooth signal strength changes naturally within a small range, and devices no longer appear at exactly the same time.\n- Bluetooth results can be filtered by device address and advertised service information.\n- Improved Bluetooth scanning compatibility from Android 11 through Android 17.\n- Fixed missing Bluetooth broadcast data and results arriving after a scan was stopped."
+    "zh-CN": "- 采集环境时会保存更完整的附近低功耗蓝牙广播内容。\n- 虚拟蓝牙会按照记录下来的节奏持续返回设备，不再只出现一次。\n- 蓝牙信号强弱会有小范围自然变化，设备之间的出现时间也会错开。\n- 支持按设备地址和广播中的服务信息筛选蓝牙结果。\n- 改善 Android 11 至 Android 17 的蓝牙扫描兼容性。\n- 修复部分手机蓝牙设备显示不全、扫描内容缺失或停止后仍收到结果的问题。",
+    "en": "- Environment capture now keeps more complete nearby Bluetooth Low Energy broadcast data.\n- Virtual Bluetooth devices now continue to appear at their recorded pace instead of appearing only once.\n- Bluetooth signal strength changes naturally within a small range, and devices no longer appear at exactly the same time.\n- Bluetooth results can be filtered by device address and advertised service information.\n- Improved Bluetooth scanning compatibility from Android 11 through Android 17.\n- Fixed incomplete Bluetooth device lists, missing broadcast data, and results arriving after a scan was stopped."
   },
   "apkSize": 66991728,
-  "publishedAt": "2026-08-20T01:28:17Z"
+  "publishedAt": "2026-08-20T15:36:17Z"
 }
