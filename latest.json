@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 14,
-  "versionName": "0.2.3",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.3/VirtualRegion-0.2.3.apk",
+  "versionCode": 15,
+  "versionName": "0.2.4",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.4/VirtualRegion-0.2.4.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "f0a0e2a68ef8f8ea0537d8c24769ae4716e5dcc0692b5356378c9b5779be1423",
+  "sha256": "584993329d422af09ffb9d29225f91aabd26cec9a04f96ab6d702a9d6a4116f0",
   "releaseNotes": {
-    "zh-CN": "- 采集环境时会保存更完整的附近低功耗蓝牙广播内容。\n- 虚拟蓝牙会按照记录下来的节奏持续返回设备，不再只出现一次。\n- 蓝牙信号强弱会有小范围自然变化，设备之间的出现时间也会错开。\n- 支持按设备地址和广播中的服务信息筛选蓝牙结果。\n- 改善 Android 11 至 Android 17 的蓝牙扫描兼容性。\n- 修复部分手机蓝牙设备显示不全、扫描内容缺失或停止后仍收到结果的问题。\n- 修复英文界面中仍显示部分中文文字的问题。",
-    "en": "- Environment capture now keeps more complete nearby Bluetooth Low Energy broadcast data.\n- Virtual Bluetooth devices now continue to appear at their recorded pace instead of appearing only once.\n- Bluetooth signal strength changes naturally within a small range, and devices no longer appear at exactly the same time.\n- Bluetooth results can be filtered by device address and advertised service information.\n- Improved Bluetooth scanning compatibility from Android 11 through Android 17.\n- Fixed incomplete Bluetooth device lists, missing broadcast data, and results arriving after a scan was stopped.\n- Fixed remaining Chinese text appearing in the English interface."
+    "zh-CN": "- 路线录制改用当前地图服务商的联合定位，并支持长时间增量保存和中断恢复。\n- 新增实时录制状态、保存命名、定位质量与轨迹统计，停止后状态和时间会正确冻结。\n- 新增标准 GNSS 卫星状态模拟，改善运动应用中的卫星数量和信号显示。\n- 优化路线编辑地图、位置搜索与横向操作栏，统一应用内弹窗样式。\n- 修复长路线快照超限、路线运行状态恢复以及 Wi-Fi、基站异常路径泄露真实环境的问题。\n- 改善高德与 Google 地图定位、环境采集、路线播放和 Android 16 兼容性。",
+    "en": "- Route recording now uses the selected map provider's fused location source, with long-session journaling and interrupted-session recovery.\n- Added live recording status, save naming, location quality, and route statistics; stopping now freezes status and timestamps correctly.\n- Added standard GNSS satellite-status simulation to improve satellite count and signal displays in fitness apps.\n- Improved the route editor map, location search, horizontal action bar, and unified in-app dialog styling.\n- Fixed oversized long-route snapshots, route runtime recovery, and real Wi-Fi or cell-data exposure on virtualization failures.\n- Improved AMap and Google location, environment capture, route playback, and Android 16 compatibility."
   },
-  "apkSize": 66998376,
-  "publishedAt": "2026-08-20T15:58:41Z"
+  "apkSize": 67193100,
+  "publishedAt": "2026-08-21T16:40:42Z"
 }
