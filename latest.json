@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 15,
-  "versionName": "0.2.4",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.4/VirtualRegion-0.2.4.apk",
+  "versionCode": 16,
+  "versionName": "0.2.5",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.5/VirtualRegion-0.2.5.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "584993329d422af09ffb9d29225f91aabd26cec9a04f96ab6d702a9d6a4116f0",
+  "sha256": "8b5cf7ec9c2a250c4f10d26d84cb030b42c8e52909259491307e9c9a9377ff59",
   "releaseNotes": {
-    "zh-CN": "- 路线录制改用当前地图服务商的联合定位，并支持长时间增量保存和中断恢复。\n- 新增实时录制状态、保存命名、定位质量与轨迹统计，停止后状态和时间会正确冻结。\n- 新增标准 GNSS 卫星状态模拟，改善运动应用中的卫星数量和信号显示。\n- 优化路线编辑地图、位置搜索与横向操作栏，统一应用内弹窗样式。\n- 修复长路线快照超限、路线运行状态恢复以及 Wi-Fi、基站异常路径泄露真实环境的问题。\n- 改善高德与 Google 地图定位、环境采集、路线播放和 Android 16 兼容性。",
-    "en": "- Route recording now uses the selected map provider's fused location source, with long-session journaling and interrupted-session recovery.\n- Added live recording status, save naming, location quality, and route statistics; stopping now freezes status and timestamps correctly.\n- Added standard GNSS satellite-status simulation to improve satellite count and signal displays in fitness apps.\n- Improved the route editor map, location search, horizontal action bar, and unified in-app dialog styling.\n- Fixed oversized long-route snapshots, route runtime recovery, and real Wi-Fi or cell-data exposure on virtualization failures.\n- Improved AMap and Google location, environment capture, route playback, and Android 16 compatibility."
+    "zh-CN": "- 改进 V2 授权验证流程：本地校验失败后先向服务端确认，网络、超时、5xx、解析或验签异常不再误报“未授权”。\n- 新增授权六态管理、3/5/10/15/30 秒后台重试、网络恢复与回到前台立即验证，以及 CHECK/ACTIVATE 单请求并发控制。\n- 只有服务端明确返回未授权、撤销或过期时才清理授权并弹框；同一次拒绝事件只显示一次。\n- 修复 system_server 定位监听器生命周期与重复注册问题，避免融合定位在路线运动中收到重复、乱序或无效 Provider 的位置。\n- 路线位置统一提供 GPS Provider 和运动精度字段，改善运动应用开始运动后的定位与信号兼容性。\n- Wi-Fi 路线空环境现在返回安全的未连接状态，避免依赖非空 WifiInfo 的应用崩溃，同时继续保持 fail-closed。",
+    "en": "- Improved V2 authorization verification: a local validation failure is confirmed with the server first, while network, timeout, HTTP 5xx, parsing, or signature failures no longer appear as “unauthorized.”\n- Added six-state authorization management, 3/5/10/15/30-second background retries, immediate verification on network recovery or foreground return, and single-request CHECK/ACTIVATE concurrency control.\n- Authorization is cleared and the dialog is shown only for explicit server-side unauthorized, revoked, or expired results; each denial event is displayed once.\n- Fixed system_server location-listener lifecycle and repeated registration handling to prevent duplicate, reordered, or invalid-provider fixes during route movement.\n- Route fixes now consistently expose the GPS provider and motion accuracy fields for better compatibility when fitness apps start an activity.\n- Empty route Wi-Fi environments now return a safe disconnected state, preventing crashes in apps that expect non-null WifiInfo while remaining fail-closed."
   },
-  "apkSize": 67193100,
-  "publishedAt": "2026-08-21T16:40:42Z"
+  "apkSize": 67194200,
+  "publishedAt": "2026-08-22T16:45:45Z"
 }
