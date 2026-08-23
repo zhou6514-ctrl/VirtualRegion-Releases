@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 16,
-  "versionName": "0.2.5",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.5/VirtualRegion-0.2.5.apk",
+  "versionCode": 17,
+  "versionName": "0.2.6",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.6/VirtualRegion-0.2.6.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "8b5cf7ec9c2a250c4f10d26d84cb030b42c8e52909259491307e9c9a9377ff59",
+  "sha256": "6b333d431fade55ec2a2d4f58dd52ff345da72720727fed8229270b73915567d",
   "releaseNotes": {
-    "zh-CN": "- 改进 V2 授权验证流程：本地校验失败后先向服务端确认，网络、超时、5xx、解析或验签异常不再误报“未授权”。\n- 新增授权六态管理、3/5/10/15/30 秒后台重试、网络恢复与回到前台立即验证，以及 CHECK/ACTIVATE 单请求并发控制。\n- 只有服务端明确返回未授权、撤销或过期时才清理授权并弹框；同一次拒绝事件只显示一次。\n- 修复 system_server 定位监听器生命周期与重复注册问题，避免融合定位在路线运动中收到重复、乱序或无效 Provider 的位置。\n- 路线位置统一提供 GPS Provider 和运动精度字段，改善运动应用开始运动后的定位与信号兼容性。\n- Wi-Fi 路线空环境现在返回安全的未连接状态，避免依赖非空 WifiInfo 的应用崩溃，同时继续保持 fail-closed。",
-    "en": "- Improved V2 authorization verification: a local validation failure is confirmed with the server first, while network, timeout, HTTP 5xx, parsing, or signature failures no longer appear as “unauthorized.”\n- Added six-state authorization management, 3/5/10/15/30-second background retries, immediate verification on network recovery or foreground return, and single-request CHECK/ACTIVATE concurrency control.\n- Authorization is cleared and the dialog is shown only for explicit server-side unauthorized, revoked, or expired results; each denial event is displayed once.\n- Fixed system_server location-listener lifecycle and repeated registration handling to prevent duplicate, reordered, or invalid-provider fixes during route movement.\n- Route fixes now consistently expose the GPS provider and motion accuracy fields for better compatibility when fitness apps start an activity.\n- Empty route Wi-Fi environments now return a safe disconnected state, preventing crashes in apps that expect non-null WifiInfo while remaining fail-closed."
+    "zh-CN": "- 修复给应用开启虚拟 Wi-Fi 后列表可能为空的问题，现在可以正常看到并切换保存的网络。\n- 改进定位、卫星信号、基站和蓝牙显示，减少跑步和检测类应用闪退或看到真实信息的情况。\n- 首次安装会要求完成设备授权；授权服务暂时连不上时每 2 秒自动重试，不会把网络问题误认为未授权。\n- 安装或更新后如果还没重启手机，首页会提醒重启，让新版模块真正生效。\n- 改进路线运行、暂停和开关切换时的稳定性。",
+    "en": "- Fixed an issue where the Wi-Fi list could be empty after virtual Wi-Fi was enabled for an app. Saved networks can now be shown and selected normally.\n- Improved location, satellite signal, mobile network, and Bluetooth results to reduce crashes or real information appearing in fitness and device-checking apps.\n- First-time installs now require device authorization. If the authorization service cannot be reached, the app retries every 2 seconds and does not mistake a network problem for a denied device.\n- The home screen now reminds users to restart the phone after installing or updating so the new module can take effect.\n- Improved stability when routes are running, paused, or switched on and off."
   },
-  "apkSize": 67194200,
-  "publishedAt": "2026-08-22T16:45:45Z"
+  "apkSize": 67213288,
+  "publishedAt": "2026-08-23T01:36:58Z"
 }
