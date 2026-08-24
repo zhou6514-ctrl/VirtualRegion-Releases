@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 17,
-  "versionName": "0.2.6",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.6/VirtualRegion-0.2.6.apk",
+  "versionCode": 18,
+  "versionName": "0.2.7",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.7/VirtualRegion-0.2.7.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "6b333d431fade55ec2a2d4f58dd52ff345da72720727fed8229270b73915567d",
+  "sha256": "ee7fbffa798b5e23e4f09d67b50b11c8e41814b1891544d0bd42ae71af9cd710",
   "releaseNotes": {
-    "zh-CN": "- 修复给应用开启虚拟 Wi-Fi 后列表可能为空的问题，现在可以正常看到并切换保存的网络。\n- 改进定位、卫星信号、基站和蓝牙显示，减少跑步和检测类应用闪退或看到真实信息的情况。\n- 首次安装会要求完成设备授权；授权服务暂时连不上时每 2 秒自动重试，不会把网络问题误认为未授权。\n- 安装或更新后如果还没重启手机，首页会提醒重启，让新版模块真正生效。\n- 改进路线运行、暂停和开关切换时的稳定性。",
-    "en": "- Fixed an issue where the Wi-Fi list could be empty after virtual Wi-Fi was enabled for an app. Saved networks can now be shown and selected normally.\n- Improved location, satellite signal, mobile network, and Bluetooth results to reduce crashes or real information appearing in fitness and device-checking apps.\n- First-time installs now require device authorization. If the authorization service cannot be reached, the app retries every 2 seconds and does not mistake a network problem for a denied device.\n- The home screen now reminds users to restart the phone after installing or updating so the new module can take effect.\n- Improved stability when routes are running, paused, or switched on and off."
+    "zh-CN": "- 修复授权问题。\n- 修复开启虚拟 Wi-Fi 后列表为空的问题。\n- 修复部分情况下保存的 Wi-Fi 环境没有正常显示的问题。",
+    "en": "- Fixed authorization issues.\n- Fixed an issue where the Wi-Fi list was empty after virtual Wi-Fi was enabled.\n- Fixed an issue where saved Wi-Fi environments were not shown correctly in some cases."
   },
-  "apkSize": 67213288,
-  "publishedAt": "2026-08-23T01:36:58Z"
+  "apkSize": 67213840,
+  "publishedAt": "2026-08-24T10:37:55Z"
 }
