@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 20,
-  "versionName": "0.2.9",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.9/VirtualRegion-0.2.9.apk",
+  "versionCode": 100,
+  "versionName": "1.0.0",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.0/VirtualRegion-1.0.0.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "47f37f2a32e6f1ab0a2956350e77f1550f7aab808fb3564adc4423758b27dd45",
+  "sha256": "0cccf6275f232db0a8ac79a47420c56f9221fc6e2bc03b7dc90f5d209485d87d",
   "releaseNotes": {
-    "zh-CN": "- 修复全局模式下路线模拟悬浮窗显示运行，但目标应用位置停留在路线起点的问题。\n- 全局模式现在为所有目标应用共享同一个路线运行进度，并始终优先于遗留的单应用路线状态。",
-    "en": "- Fixed an issue where the route overlay showed active playback in global mode while target apps remained at the route starting point.\n- Global mode now shares one route runtime across all target apps and always takes priority over stale per-app route state."
+    "zh-CN": "- 强化全局模式排除规则，VirtualRegion 管理器自身始终读取真实环境，不会被全局定位、路线、Wi-Fi、基站或蓝牙模拟影响。\n- 即使策略发布、缓存或旧运行态传入了模块身份，策略解析和全局路线运行态仍会拒绝对模块自身生效。",
+    "en": "- Strengthened global-mode exclusions so the VirtualRegion manager always observes the real environment and is never affected by global location, route, Wi-Fi, cell, or Bluetooth simulation.\n- Policy resolution and global route runtime access now reject the manager identity even if it arrives through publication, cache, or stale runtime state."
   },
-  "apkSize": 67254332,
-  "publishedAt": "2026-08-28T16:25:59Z"
+  "apkSize": 67254328,
+  "publishedAt": "2026-08-28T17:04:49Z"
 }
