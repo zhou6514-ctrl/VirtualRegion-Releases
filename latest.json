@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 19,
-  "versionName": "0.2.8",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.8/VirtualRegion-0.2.8.apk",
+  "versionCode": 20,
+  "versionName": "0.2.9",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v0.2.9/VirtualRegion-0.2.9.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "ac5492b45c8297dde3b91a28b205b3ba6f74d6a0d365fcd38b1e275b9c54ff79",
+  "sha256": "47f37f2a32e6f1ab0a2956350e77f1550f7aab808fb3564adc4423758b27dd45",
   "releaseNotes": {
-    "zh-CN": "- 新增全局虚拟环境配置，全局模式优先于单个应用配置，并自动排除系统应用以保障设备稳定。\n- 路线模拟悬浮窗在全局模式下直接使用全局环境，不再要求选择目标应用。\n- 标题栏新增已授权/未授权状态入口，可完成授权并查看按手机时区显示的授权到期时间。\n- 修复 Android 13 开启全局模式后重启可能导致系统异常的问题。\n- 修复 Android 16 全局 Wi-Fi 与授权配置传递不稳定的问题。",
-    "en": "- Added global virtual-environment configuration. Global mode takes priority over per-app policies and excludes system apps to protect device stability.\n- The route overlay now uses the global environment directly in global mode without requiring an app selection.\n- Added an authorized/unauthorized status entry in the title bar for activation and authorization details, with expiry shown in the phone's time zone.\n- Fixed a potential system failure after rebooting Android 13 with global mode enabled.\n- Fixed unstable global Wi-Fi and authorization policy delivery on Android 16."
+    "zh-CN": "- 修复全局模式下路线模拟悬浮窗显示运行，但目标应用位置停留在路线起点的问题。\n- 全局模式现在为所有目标应用共享同一个路线运行进度，并始终优先于遗留的单应用路线状态。",
+    "en": "- Fixed an issue where the route overlay showed active playback in global mode while target apps remained at the route starting point.\n- Global mode now shares one route runtime across all target apps and always takes priority over stale per-app route state."
   },
-  "apkSize": 67254328,
-  "publishedAt": "2026-08-28T16:04:28Z"
+  "apkSize": 67254332,
+  "publishedAt": "2026-08-28T16:25:59Z"
 }
