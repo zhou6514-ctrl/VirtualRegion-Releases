@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 101,
-  "versionName": "1.0.1",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.1/VirtualRegion-1.0.1.apk",
+  "versionCode": 103,
+  "versionName": "1.0.2",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.2/VirtualRegion-1.0.2.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "05274da08cb07ba2d2e706606c40b6cbc8a25b2855acd5d5bb335c56854c5271",
+  "sha256": "214f22acc357b881b2d073b30dff658f17de5785ff9d748a3782476cd0963a18",
   "releaseNotes": {
-    "zh-CN": "- 修复管理器长时间未打开后功能可能停止的问题。\n- 减少授权异常时的重复警告，日志更清晰。",
-    "en": "- Fixed an issue where features could stop working after the manager had not been opened for a long time.\n- Reduced repeated authorization warnings for clearer logs."
+    "zh-CN": "- 修复长时间未启动管理器后功能可能失效的问题。",
+    "en": "- Fixed an issue where features could stop working after the manager had not been opened for a long time."
   },
   "apkSize": 67254524,
-  "publishedAt": "2026-08-29T15:28:56Z"
+  "publishedAt": "2026-08-30T08:22:46Z"
 }
