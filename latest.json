@@ -4,11 +4,11 @@
   "versionName": "1.0.2",
   "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.2/VirtualRegion-1.0.2.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "214f22acc357b881b2d073b30dff658f17de5785ff9d748a3782476cd0963a18",
+  "sha256": "accce2db24f9dd9d45a96ff7fdfeec839390dc64b837a420de75db26803f01d8",
   "releaseNotes": {
-    "zh-CN": "- 修复长时间未启动管理器后功能可能失效的问题。",
-    "en": "- Fixed an issue where features could stop working after the manager had not been opened for a long time."
+    "zh-CN": "- 新增卡密更换功能，可直接在授权状态中输入新卡密。\n- 修复长时间未启动管理器后功能可能失效的问题。",
+    "en": "- Added license key replacement directly from the authorization status screen.\n- Fixed an issue where features could stop working after the manager had not been opened for a long time."
   },
-  "apkSize": 67254524,
-  "publishedAt": "2026-08-30T08:22:46Z"
+  "apkSize": 67259736,
+  "publishedAt": "2026-09-01T01:30:21Z"
 }
