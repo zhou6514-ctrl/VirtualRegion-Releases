@@ -10,5 +10,19 @@
     "url": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases",
     "metadataPath": "latest.json"
   },
-  "binaryStorage": "github-releases"
+  "listingRepository": {
+    "slug": "Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion",
+    "tagPattern": "{versionCode}-{versionName}",
+    "assetNamePattern": "VirtualRegion_{versionName}.apk"
+  },
+  "binaryStorage": "github-releases",
+  "artifactPolicy": {
+    "profile": "r8-nmmp-v1",
+    "minimumConvertedMethods": 10,
+    "requiredStoredLibraries": ["libnmmp.so", "libnmmvm.so"],
+    "require16KiBAlignment": true,
+    "requireMatchingSigner": true,
+    "requireByteIdenticalListingAsset": true,
+    "releaseNotesUserVisibleOnly": true
+  }
 }
