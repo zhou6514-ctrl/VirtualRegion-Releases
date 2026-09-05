@@ -4,11 +4,11 @@
   "versionName": "1.0.3",
   "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.3/VirtualRegion-1.0.3.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "680341b06fb87b91c53599584b4c6498eec90fa26d45037b88ed704841005c4e",
+  "sha256": "3ff663d79b56bb473774e9cdea76ce49772a2e1c0efa615d49d5812a164918e0",
   "releaseNotes": {
     "zh-CN": "- 新增环境广场，可浏览、分享并通过分享码导入环境配置。\n- 修复管理器长时间未打开后，虚拟 SIM 可能失效的问题。\n- 网络请求失败时会直接说明原因，并提供更容易理解的处理建议。\n- 优化首页与环境配置流程，常用操作和生效状态更容易确认。",
     "en": "- Added Environment Plaza for browsing, sharing, and importing environment profiles with a share code.\n- Fixed an issue where virtual SIM settings could stop working after the manager had not been opened for a long time.\n- Network failures now explain the cause and provide clearer recovery guidance.\n- Improved the home and environment setup flows so common actions and activation status are easier to find."
   },
-  "apkSize": 65658719,
+  "apkSize": 67149663,
   "publishedAt": "2026-09-04T18:07:05Z"
 }
