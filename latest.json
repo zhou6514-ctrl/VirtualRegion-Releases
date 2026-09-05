@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 104,
-  "versionName": "1.0.3",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.3/VirtualRegion-1.0.3.apk",
+  "versionCode": 105,
+  "versionName": "1.0.4",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.4/VirtualRegion-1.0.4.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "3ff663d79b56bb473774e9cdea76ce49772a2e1c0efa615d49d5812a164918e0",
+  "sha256": "8affc59f61e9601a9ee9f06f35a8e8143d81522a4317da8223e3f9b74fb57f94",
   "releaseNotes": {
-    "zh-CN": "- 新增环境广场，可浏览、分享并通过分享码导入环境配置。\n- 修复管理器长时间未打开后，虚拟 SIM 可能失效的问题。\n- 网络请求失败时会直接说明原因，并提供更容易理解的处理建议。\n- 优化首页与环境配置流程，常用操作和生效状态更容易确认。",
-    "en": "- Added Environment Plaza for browsing, sharing, and importing environment profiles with a share code.\n- Fixed an issue where virtual SIM settings could stop working after the manager had not been opened for a long time.\n- Network failures now explain the cause and provide clearer recovery guidance.\n- Improved the home and environment setup flows so common actions and activation status are easier to find."
+    "zh-CN": "- 新增按应用设置语言与时区，两项均可单独设置或跟随系统。\n- 新增 503 项地区模板，覆盖 247 个国家和地区，支持按中英文地区、城市、语言代码与时区搜索并读取。\n- 改善目标应用日志显示，便于确认设置是否生效。",
+    "en": "- Added per-app language and time zone settings, with independent options to follow the system.\n- Added 503 regional templates covering 247 countries and territories, searchable by Chinese or English place names, language codes, and time zones.\n- Improved target-app logs to make it easier to confirm that settings are applied."
   },
-  "apkSize": 67149663,
-  "publishedAt": "2026-09-04T18:07:05Z"
+  "apkSize": 67182431,
+  "publishedAt": "2026-09-05T16:33:39Z"
 }
