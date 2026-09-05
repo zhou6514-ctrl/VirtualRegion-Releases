@@ -4,7 +4,7 @@
   "versionName": "1.0.4",
   "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.4/VirtualRegion-1.0.4.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "8affc59f61e9601a9ee9f06f35a8e8143d81522a4317da8223e3f9b74fb57f94",
+  "sha256": "4f4021f385a3d3830dc9674e8341a2762bfb57b27cc7efc67c04d20d14805cdc",
   "releaseNotes": {
     "zh-CN": "- 新增按应用设置语言与时区，两项均可单独设置或跟随系统。\n- 新增 503 项地区模板，覆盖 247 个国家和地区，支持按中英文地区、城市、语言代码与时区搜索并读取。\n- 改善目标应用日志显示，便于确认设置是否生效。",
     "en": "- Added per-app language and time zone settings, with independent options to follow the system.\n- Added 503 regional templates covering 247 countries and territories, searchable by Chinese or English place names, language codes, and time zones.\n- Improved target-app logs to make it easier to confirm that settings are applied."
