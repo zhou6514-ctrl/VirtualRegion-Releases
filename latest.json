@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 105,
-  "versionName": "1.0.4",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.4/VirtualRegion-1.0.4.apk",
+  "versionCode": 106,
+  "versionName": "1.0.5",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.5/VirtualRegion-1.0.5.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "83a85614820b4caf8b1621189e2c269e4d8826efde2563197789e91540fb69e3",
+  "sha256": "916b8790b63d0b7e7b4506a28ba5f0aecda759e9b4d4198d414c147cf6cb5155",
   "releaseNotes": {
-    "zh-CN": "- 新增按应用设置语言与时区，两项均可单独设置或跟随系统。\n- 新增 503 项地区模板，覆盖 247 个国家和地区，支持按中英文地区、城市、语言代码与时区搜索并读取。\n- 改善目标应用日志显示，便于确认设置是否生效。",
-    "en": "- Added per-app language and time zone settings, with independent options to follow the system.\n- Added 503 regional templates covering 247 countries and territories, searchable by Chinese or English place names, language codes, and time zones.\n- Improved target-app logs to make it easier to confirm that settings are applied."
+    "zh-CN": "- 新增环境快捷切换悬浮窗，可在使用其他应用时搜索并切换已保存环境。\n- 改善新版 Android 上位置、Wi-Fi、基站和蓝牙虚拟环境的兼容性与稳定性。\n- 减少目标应用中的无线环境兼容冲突，并改善回调、扫描停止和环境切换后的资源清理。",
+    "en": "- Added a quick environment-switch overlay for searching and switching saved environments while using other apps.\n- Improved compatibility and stability for virtual location, Wi-Fi, cell and Bluetooth environments on newer Android versions.\n- Reduced radio-environment compatibility conflicts inside target apps and improved cleanup after callbacks, scan stops and environment switches."
   },
-  "apkSize": 67182431,
-  "publishedAt": "2026-09-05T16:33:39Z"
+  "apkSize": 67231583,
+  "publishedAt": "2026-09-08T08:16:12Z"
 }
