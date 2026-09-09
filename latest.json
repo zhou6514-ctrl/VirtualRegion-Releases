@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 106,
-  "versionName": "1.0.5",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.5/VirtualRegion-1.0.5.apk",
+  "versionCode": 107,
+  "versionName": "1.0.6",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.6/VirtualRegion-1.0.6.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "4e56081ad9aff5ce416163de75526f12179360c0a2eab0cac864b86e330e222a",
+  "sha256": "49d0880561b945af4d42bc9ec0cdf304541067dcb255d783c9f65bacb1c04749",
   "releaseNotes": {
-    "zh-CN": "- 新增环境快捷切换悬浮窗，可在使用其他应用时搜索并切换已保存环境。\n- 改善新版 Android 上位置、Wi-Fi、基站和蓝牙虚拟环境的兼容性与稳定性。\n- 减少目标应用中的无线环境兼容冲突，并改善回调、扫描停止和环境切换后的资源清理。",
-    "en": "- Added a quick environment-switch overlay for searching and switching saved environments while using other apps.\n- Improved compatibility and stability for virtual location, Wi-Fi, cell and Bluetooth environments on newer Android versions.\n- Reduced radio-environment compatibility conflicts inside target apps and improved cleanup after callbacks, scan stops and environment switches."
+    "zh-CN": "- 新增 GPS 摇杆悬浮窗，支持全局模式、独立应用选择、速度调节和方向控制。\n- 摇杆移动改用低延迟实时更新，减少频繁快照写入和操作延迟。\n- 改善授权校验、应用身份隔离和摇杆指令权限控制，提升稳定性与安全性。",
+    "en": "- Added a GPS joystick overlay with global mode, per-app selection, speed adjustment and directional control.\n- Switched joystick movement to low-latency realtime updates, reducing repeated snapshot writes and input delay.\n- Improved authorization checks, application identity isolation and joystick command permissions for better stability and security."
   },
   "apkSize": 66674527,
-  "publishedAt": "2026-09-08T08:16:12Z"
+  "publishedAt": "2026-09-09T09:07:13Z"
 }
