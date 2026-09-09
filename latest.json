@@ -4,11 +4,11 @@
   "versionName": "1.0.5",
   "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.5/VirtualRegion-1.0.5.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "916b8790b63d0b7e7b4506a28ba5f0aecda759e9b4d4198d414c147cf6cb5155",
+  "sha256": "4e56081ad9aff5ce416163de75526f12179360c0a2eab0cac864b86e330e222a",
   "releaseNotes": {
     "zh-CN": "- 新增环境快捷切换悬浮窗，可在使用其他应用时搜索并切换已保存环境。\n- 改善新版 Android 上位置、Wi-Fi、基站和蓝牙虚拟环境的兼容性与稳定性。\n- 减少目标应用中的无线环境兼容冲突，并改善回调、扫描停止和环境切换后的资源清理。",
     "en": "- Added a quick environment-switch overlay for searching and switching saved environments while using other apps.\n- Improved compatibility and stability for virtual location, Wi-Fi, cell and Bluetooth environments on newer Android versions.\n- Reduced radio-environment compatibility conflicts inside target apps and improved cleanup after callbacks, scan stops and environment switches."
   },
-  "apkSize": 67231583,
+  "apkSize": 66674527,
   "publishedAt": "2026-09-08T08:16:12Z"
 }
