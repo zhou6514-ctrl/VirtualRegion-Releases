@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 108,
-  "versionName": "1.0.7",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.7/VirtualRegion-1.0.7.apk",
+  "versionCode": 109,
+  "versionName": "1.0.8",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.8/VirtualRegion-1.0.8.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "33ddc348b2c151b3cf93819ab3a622afa64b9e178d1fc7b0c9f8eb2c3d279a28",
+  "sha256": "c51ced063930bb2346141877a0305bb3afb634ca21f68ebd14657c7d1c2c5035",
   "releaseNotes": {
-    "zh-CN": "- 在应用管理中新增 GPS 抖动开关和最大偏移阈值设置，支持固定位置、路线和摇杆位置。\n- 调整环境切换、GPS 摇杆和路线控制悬浮窗的展开尺寸，减少屏幕遮挡。\n- 最小化后保留原有图标大小，便于快速恢复操作。",
-    "en": "- Added a GPS jitter switch and maximum offset setting in App Management for fixed, route and joystick locations.\n- Resized the expanded environment switcher, GPS joystick and route control overlays to reduce screen obstruction.\n- Kept the original minimized icon size for quick access when restoring an overlay."
+    "zh-CN": "- 新增虚拟媒体，可从 RTSP 网络流或本地视频二选一替换指定应用的 Camera 画面、拍照结果和麦克风输入。\n- 媒体读取或解码失败时自动恢复真实摄像头与麦克风，不影响其他虚拟功能。\n- 修复开启 GPS 抖动设置后 Google 定位服务可能无法读取新配置的问题。",
+    "en": "- Added Virtual Media, with a choice of RTSP or local video to replace camera preview, captured photos, and microphone input for selected apps.\n- Media read or decode failures now fall back to the real camera and microphone without affecting other virtual features.\n- Fixed an issue where Google location services could stop reading configuration after GPS jitter settings were introduced."
   },
-  "apkSize": 66674527,
-  "publishedAt": "2026-09-10T16:05:56Z"
+  "apkSize": 86827336,
+  "publishedAt": "2026-09-10T18:13:09Z"
 }
