@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 107,
-  "versionName": "1.0.6",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.6/VirtualRegion-1.0.6.apk",
+  "versionCode": 108,
+  "versionName": "1.0.7",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.7/VirtualRegion-1.0.7.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "49d0880561b945af4d42bc9ec0cdf304541067dcb255d783c9f65bacb1c04749",
+  "sha256": "33ddc348b2c151b3cf93819ab3a622afa64b9e178d1fc7b0c9f8eb2c3d279a28",
   "releaseNotes": {
-    "zh-CN": "- 新增 GPS 摇杆悬浮窗，支持全局模式、独立应用选择、速度调节和方向控制。\n- 摇杆移动改用低延迟实时更新，减少频繁快照写入和操作延迟。\n- 改善授权校验、应用身份隔离和摇杆指令权限控制，提升稳定性与安全性。",
-    "en": "- Added a GPS joystick overlay with global mode, per-app selection, speed adjustment and directional control.\n- Switched joystick movement to low-latency realtime updates, reducing repeated snapshot writes and input delay.\n- Improved authorization checks, application identity isolation and joystick command permissions for better stability and security."
+    "zh-CN": "- 在应用管理中新增 GPS 抖动开关和最大偏移阈值设置，支持固定位置、路线和摇杆位置。\n- 调整环境切换、GPS 摇杆和路线控制悬浮窗的展开尺寸，减少屏幕遮挡。\n- 最小化后保留原有图标大小，便于快速恢复操作。",
+    "en": "- Added a GPS jitter switch and maximum offset setting in App Management for fixed, route and joystick locations.\n- Resized the expanded environment switcher, GPS joystick and route control overlays to reduce screen obstruction.\n- Kept the original minimized icon size for quick access when restoring an overlay."
   },
   "apkSize": 66674527,
-  "publishedAt": "2026-09-09T09:07:13Z"
+  "publishedAt": "2026-09-10T16:05:56Z"
 }
