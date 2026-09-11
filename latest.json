@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 109,
-  "versionName": "1.0.8",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.8/VirtualRegion-1.0.8.apk",
+  "versionCode": 110,
+  "versionName": "1.0.9",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.9/VirtualRegion-1.0.9.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "c51ced063930bb2346141877a0305bb3afb634ca21f68ebd14657c7d1c2c5035",
+  "sha256": "ff6aa24cb6408de791f081012cf0619686f43f04a506de184f73319962c95358",
   "releaseNotes": {
-    "zh-CN": "- 新增虚拟媒体，可从 RTSP 网络流或本地视频二选一替换指定应用的 Camera 画面、拍照结果和麦克风输入。\n- 媒体读取或解码失败时自动恢复真实摄像头与麦克风，不影响其他虚拟功能。\n- 修复开启 GPS 抖动设置后 Google 定位服务可能无法读取新配置的问题。",
-    "en": "- Added Virtual Media, with a choice of RTSP or local video to replace camera preview, captured photos, and microphone input for selected apps.\n- Media read or decode failures now fall back to the real camera and microphone without affecting other virtual features.\n- Fixed an issue where Google location services could stop reading configuration after GPS jitter settings were introduced."
+    "zh-CN": "- 改进 Android 16 上虚拟视频播放的方向适配、连续性和声音稳定性。\n- 修复新版 Google Play 服务主进程无法接收虚拟定位策略的问题。\n- 保留虚拟媒体异常时自动恢复真实摄像头与麦克风的行为，不影响其他虚拟功能。",
+    "en": "- Improved virtual video orientation handling, continuity, and audio stability on Android 16.\n- Fixed virtual location policies not reaching the main process of newer Google Play services.\n- Media failures still fall back to the real camera and microphone without affecting other virtual features."
   },
-  "apkSize": 86827336,
-  "publishedAt": "2026-09-10T18:13:09Z"
+  "apkSize": 86565192,
+  "publishedAt": "2026-09-11T18:37:07Z"
 }
