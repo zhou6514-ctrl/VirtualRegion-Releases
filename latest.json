@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 110,
-  "versionName": "1.0.9",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.9/VirtualRegion-1.0.9.apk",
+  "versionCode": 111,
+  "versionName": "1.0.10",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.10/VirtualRegion-1.0.10.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "ff6aa24cb6408de791f081012cf0619686f43f04a506de184f73319962c95358",
+  "sha256": "18e3d0ad52332a3e2667e529a374321908711498b40ba27361c09257e7dafbf1",
   "releaseNotes": {
-    "zh-CN": "- 改进 Android 16 上虚拟视频播放的方向适配、连续性和声音稳定性。\n- 修复新版 Google Play 服务主进程无法接收虚拟定位策略的问题。\n- 保留虚拟媒体异常时自动恢复真实摄像头与麦克风的行为，不影响其他虚拟功能。",
-    "en": "- Improved virtual video orientation handling, continuity, and audio stability on Android 16.\n- Fixed virtual location policies not reaching the main process of newer Google Play services.\n- Media failures still fall back to the real camera and microphone without affecting other virtual features."
+    "zh-CN": "- 完善 Android 13–17 系统定位兼容性，提升 Google 定位服务与常见定位调用的稳定性。\n- 优化配置快照发送与生效反馈，减少等待时间和持续显示生效中的问题。\n- 提升虚拟视频和音频录制的流畅度、方向兼容性与声音质量。\n- 新增本地照片输入，可替换相机预览、录像画面和拍照；照片模式保留真实麦克风，已启用应用优先显示。",
+    "en": "- Improved Android 13–17 system location compatibility and reliability with Google location services and common location requests.\n- Improved configuration delivery and status feedback to reduce delays and profiles remaining in an applying state.\n- Improved virtual video and audio recording smoothness, orientation compatibility, and sound quality.\n- Added local image input for camera previews, recordings, and photos; image mode keeps the real microphone, and enabled apps are shown first."
   },
-  "apkSize": 86565192,
-  "publishedAt": "2026-09-11T18:37:07Z"
+  "apkSize": 86679880,
+  "publishedAt": "2026-09-12T17:18:32Z"
 }
