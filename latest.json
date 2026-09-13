@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 111,
-  "versionName": "1.0.10",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v1.0.10/VirtualRegion-1.0.10.apk",
+  "versionCode": 200,
+  "versionName": "2.0.0",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.0/VirtualRegion-2.0.0.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "18e3d0ad52332a3e2667e529a374321908711498b40ba27361c09257e7dafbf1",
+  "sha256": "265f1b782a0702b6d97d594b5eebacf83d17dc32ae48f591830799f2a582101a",
   "releaseNotes": {
-    "zh-CN": "- 完善 Android 13–17 系统定位兼容性，提升 Google 定位服务与常见定位调用的稳定性。\n- 优化配置快照发送与生效反馈，减少等待时间和持续显示生效中的问题。\n- 提升虚拟视频和音频录制的流畅度、方向兼容性与声音质量。\n- 新增本地照片输入，可替换相机预览、录像画面和拍照；照片模式保留真实麦克风，已启用应用优先显示。",
-    "en": "- Improved Android 13–17 system location compatibility and reliability with Google location services and common location requests.\n- Improved configuration delivery and status feedback to reduce delays and profiles remaining in an applying state.\n- Improved virtual video and audio recording smoothness, orientation compatibility, and sound quality.\n- Added local image input for camera previews, recordings, and photos; image mode keeps the real microphone, and enabled apps are shown first."
+    "zh-CN": "- 全新侧滑导航与统一浅色/深色界面，环境、路线、应用和设置更直达，并支持 18 种界面语言。\n- 新增环境与路线快捷应用，优化应用搜索、配置状态和语言/时区操作。\n- 虚拟媒体支持 RTSP、RTMP、本地视频和照片输入，改善画面方向、加载过渡、录制流畅度与声音质量。\n- 语言、时区和虚拟媒体仅展示已加入 LSPosed 作用域的应用，目标选择更清晰。",
+    "en": "- Introduced a new drawer navigation and unified light/dark interface, with faster access to environments, routes, apps, settings, and 18 interface languages.\n- Added quick apply for environments and routes, plus clearer app search, configuration status, and language/time-zone controls.\n- Virtual Media now supports RTSP, RTMP, local video, and photo inputs, with improved orientation, loading transitions, recording smoothness, and audio quality.\n- Language, time-zone, and Virtual Media lists now show only apps included in the LSPosed scope for clearer target selection."
   },
-  "apkSize": 86679880,
-  "publishedAt": "2026-09-12T17:18:32Z"
+  "apkSize": 88309622,
+  "publishedAt": "2026-09-13T15:56:24Z"
 }
