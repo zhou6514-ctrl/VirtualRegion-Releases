@@ -4,11 +4,11 @@
   "versionName": "2.0.0",
   "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.0/VirtualRegion-2.0.0.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "265f1b782a0702b6d97d594b5eebacf83d17dc32ae48f591830799f2a582101a",
+  "sha256": "004afa993b3ad958a11fe5091059e1e13742f77bae3cde331ececc951f6939f9",
   "releaseNotes": {
     "zh-CN": "- 全新侧滑导航与统一浅色/深色界面，环境、路线、应用和设置更直达，并支持 18 种界面语言。\n- 新增环境与路线快捷应用，优化应用搜索、配置状态和语言/时区操作。\n- 虚拟媒体支持 RTSP、RTMP、本地视频和照片输入，改善画面方向、加载过渡、录制流畅度与声音质量。\n- 语言、时区和虚拟媒体仅展示已加入 LSPosed 作用域的应用，目标选择更清晰。",
     "en": "- Introduced a new drawer navigation and unified light/dark interface, with faster access to environments, routes, apps, settings, and 18 interface languages.\n- Added quick apply for environments and routes, plus clearer app search, configuration status, and language/time-zone controls.\n- Virtual Media now supports RTSP, RTMP, local video, and photo inputs, with improved orientation, loading transitions, recording smoothness, and audio quality.\n- Language, time-zone, and Virtual Media lists now show only apps included in the LSPosed scope for clearer target selection."
   },
-  "apkSize": 88309622,
+  "apkSize": 88375158,
   "publishedAt": "2026-09-13T15:56:24Z"
 }
