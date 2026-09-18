@@ -18,7 +18,10 @@ VirtualRegion 是一款面向 LSPosed 的手机环境虚拟化工具。它可以
 需要多台手机、反复改设置的工作，整理成一套可保存、可复用、可快速切换的配置。新手也不用面对
 一堆难懂参数：先建环境，再选应用，最后点应用即可。
 
-当前版本：[2.0.0](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/200-2.0.0)
+当前版本：[2.0.1](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/201-2.0.1)
+
+当前正式 APK 仅支持 `arm64-v8a` 与 `armeabi-v7a` Android 设备，不再提供 `x86` 或 `x86_64`
+安装包。
 
 ### 你可以用它做什么
 
@@ -27,17 +30,21 @@ VirtualRegion 是一款面向 LSPosed 的手机环境虚拟化工具。它可以
 - 在地图上点选位置、搜索地点或直接输入坐标，也能一键回到真实位置。
 - 保存多个环境，每个环境可以同时包含位置、Wi-Fi、基站和蓝牙信息。
 - 从当前手机采集真实环境，减少手工填写；环境支持重命名、编辑、删除、导入和导出。
+- 支持导入 Fake Location 环境导出文件；缺少 Wi-Fi 加密字段的旧数据也会兼容处理。
 - 长按已保存环境即可快速应用；新增环境后也能直接选择要应用到哪些目标。
 - 支持按应用生效，也支持全局环境模式。预览、保存和真正应用分开，不容易误操作。
 - 环境广场支持浏览、搜索、分享和通过分享码导入环境，喜欢的配置可以先收藏到本地再决定是否使用。
 
 #### 路线模拟
 
-- 可通过地图绘制、路线规划或真实移动录制来创建路线。
-- 路线支持预览、绑定、启动、暂停、继续、停止、调速和中断恢复。
+- 先选择精确目标应用或全局范围，再选择路线；应用路线默认开启 GPS、Wi-Fi、基站和严格隔离，
+  配置发布成功后才能启动。
+- 可在地图选择起点与终点后自动规划，完成时输入名称保存，也可通过真实移动录制创建路线。
+- 路线支持预览、绑定、启动、暂停、继续、停止、调速、循环和中断恢复。
+- 可从当前暂停或停止位置重新设置终点并规划新路线；尚未开始的路线也能正常修改。
+- 路线录制支持暂停、继续和停止保存，关闭录制弹窗不会自动丢弃正在进行的会话。
 - 播放路线时可同步位置、Wi-Fi、基站和卫星状态，让移动过程更连贯。
-- 同一条路线可以分配给多个应用；“应用路线”和“应用并启动”分开，操作结果更可控。
-- 提供路线控制悬浮窗，不必频繁切回管理器。
+- 管理器页面与路线控制悬浮窗共享运行状态和命令，任一入口的操作都会同步显示。
 
 #### 按应用独立配置
 
@@ -45,6 +52,13 @@ VirtualRegion 是一款面向 LSPosed 的手机环境虚拟化工具。它可以
 - 通过 UID、用户空间和包名区分主应用、双开应用与工作资料，不会只看名字混在一起。
 - 支持应用搜索、系统应用筛选和全局模式；已启用项会优先显示。
 - GPS 自然抖动可以模拟小范围的真实漂移，偏移距离可调，也能随时恢复默认值。
+
+#### 隐藏应用列表
+
+- 按名称或包名搜索应用，并按 Android 用户空间分别选择要隐藏的软件。
+- 被选中的包对普通非系统应用表现为不可见或不存在，系统组件仍保留原有查询结果。
+- 页面显示本地保存、配置发布、system_server 和 Hook 状态；新增隐藏项需要有效授权，已有选择
+  仍可随时取消。
 
 #### SIM、语言与时区
 
@@ -74,6 +88,7 @@ VirtualRegion 是一款面向 LSPosed 的手机环境虚拟化工具。它可以
 - 环境快捷切换、GPS 摇杆和路线控制三个悬浮窗可按需开启，最小化后不遮挡主要画面。
 - 运行状态页集中显示服务状态、配置发送结果、日志和诊断，出现问题时更容易找到原因。
 - 内置版本检查，有新版本时会展示更新内容并提供下载入口。
+- 地图 SDK 无法取得真实定位时会自动尝试 Android 系统定位，减少单一提供方超时造成的失败。
 
 ### 小白安装步骤
 
@@ -118,7 +133,10 @@ For compatibility testing, regional UI checks, route demonstrations, or camera-i
 VirtualRegion turns repeated device changes into reusable profiles. The workflow is simple: create
 an environment, choose the apps, and apply it.
 
-Current version: [2.0.0](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/200-2.0.0)
+Current version: [2.0.1](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/201-2.0.1)
+
+Current release APKs support `arm64-v8a` and `armeabi-v7a` Android devices only. `x86` and
+`x86_64` packages are no longer provided.
 
 ### What you can do
 
@@ -127,17 +145,21 @@ Current version: [2.0.0](https://github.com/Xposed-Modules-Repo/io.github.zhou65
 - Pick a place on the map, search for it, enter coordinates, or return to the real location.
 - Save multiple environments containing location, Wi-Fi, cell, and Bluetooth data.
 - Capture the current device environment and rename, edit, delete, import, or export profiles.
+- Import Fake Location environment exports, including older data without a Wi-Fi encryption field.
 - Long-press a saved environment for quick apply, or choose targets immediately after creating one.
 - Use per-app or global environment mode. Previewing, saving, and applying are kept separate.
 - Browse, search, share, and import profiles from Environment Plaza before choosing whether to apply them.
 
 #### Route simulation
 
-- Create routes by drawing, route planning, or recording real movement.
-- Preview, bind, start, pause, resume, stop, change speed, and recover interrupted recordings.
+- Choose an exact target app or global scope first, then select a route. Applying a route enables
+  GPS, Wi-Fi, cell, and strict isolation by default, and playback stays disabled until publication succeeds.
+- Select start and destination points for automatic planning, then name and save the route, or record real movement.
+- Preview, bind, start, pause, resume, stop, change speed, choose a loop mode, and recover interrupted recordings.
+- Reroute from the current paused or stopped position, and edit routes that have not started yet.
+- Pause, resume, or stop and save route recording without losing an active session when its dialog closes.
 - Keep location, Wi-Fi, cell, and satellite status coordinated during playback.
-- Assign one route to multiple apps, with separate “Apply” and “Apply and start” actions.
-- Control active routes from an optional floating window.
+- Use the same synchronized runtime state and commands from the Manager page or optional floating window.
 
 #### Independent app profiles
 
@@ -145,6 +167,13 @@ Current version: [2.0.0](https://github.com/Xposed-Modules-Repo/io.github.zhou65
 - Distinguish main-user, cloned, and work-profile apps by UID, user, and package identity.
 - Search apps, include system apps when needed, and use a dedicated global mode.
 - Add adjustable natural GPS jitter for more realistic small position changes.
+
+#### Hidden Apps list
+
+- Search by app name or package and choose hidden packages separately for each Android user.
+- Selected packages appear unavailable to ordinary non-system apps while system components retain normal visibility.
+- Review local-save, publication, system_server, and Hook status. Adding a hidden package requires valid
+  authorization, while existing selections can always be removed.
 
 #### SIM, language, and time zone
 
@@ -175,6 +204,7 @@ Current version: [2.0.0](https://github.com/Xposed-Modules-Repo/io.github.zhou65
 - Enable optional environment switcher, GPS joystick, and route-control floating windows.
 - Review service status, configuration delivery, logs, and diagnostics in one place.
 - Receive a clear update prompt when a newer release is available.
+- Fall back to Android system location when the selected map SDK cannot obtain a real-location fix.
 
 ### Beginner setup
 
