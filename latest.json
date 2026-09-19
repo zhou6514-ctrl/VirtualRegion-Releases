@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 201,
-  "versionName": "2.0.1",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.1/VirtualRegion-2.0.1.apk",
+  "versionCode": 202,
+  "versionName": "2.0.2",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.2/VirtualRegion-2.0.2.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "7795dc2f429dc9715e65d436a382979405328186510405899959952dd0549d26",
+  "sha256": "207b8d99845071980e7b81b32f6c3a79d43f474790580e9e4644cbb989eeb4ac",
   "releaseNotes": {
-    "zh-CN": "- 重构路线模拟页面：先选择目标应用或全局范围，再选择路线；主页与悬浮窗同步支持启动、暂停、继续、停止、调速和循环。\n- 路线编辑支持选定起终点后自动规划并命名保存，也可从暂停或停止位置重新设置终点；路线采集支持暂停和继续。\n- 新增隐藏应用列表，可按用户空间选择要对普通非系统应用隐藏的软件，并查看配置发布状态。\n- 支持导入 Fake Location 环境文件，并兼容缺少 Wi-Fi 安全字段的旧数据，修复应用选择加载延迟和重复点击问题。\n- 地图 SDK 定位失败时自动回退到系统定位；正式 APK 现仅支持 arm64-v8a 和 armeabi-v7a。",
-    "en": "- Redesigned route simulation around selecting an app or global scope first, then a route, with synchronized start, pause, resume, stop, speed, and loop controls in the Manager and overlay.\n- Route editing can plan from selected endpoints and prompt for a name, reroute from a paused or stopped position, and pause or resume route recording.\n- Added a Hidden Apps list for choosing, per Android user, which installed packages ordinary non-system apps cannot discover, with publication status shown in the Manager.\n- Added Fake Location environment-file import and compatibility for older files without the Wi-Fi security field, while fixing delayed app selection and repeated taps during loading.\n- Falls back to Android system location when the map SDK cannot get a fix; release APKs now support arm64-v8a and armeabi-v7a only."
+    "zh-CN": "- 虚拟相机支持一次导入多个视频或多张图片，可在媒体列表或设置页快捷切换悬浮窗中点击切换。\n- 优化媒体切换衔接，切换时保留上一帧，减少卡顿和黑屏。\n- 修复路线模拟目标应用列表搜索框无法唤起键盘的问题。",
+    "en": "- Virtual Camera can now import multiple videos or images at once and switch between them from the media list or the quick-switch overlay in Settings.\n- Improved media transitions by retaining the previous frame while switching, reducing stalls and black frames.\n- Fixed the Route Simulation target-app search field not opening the keyboard."
   },
-  "apkSize": 76636045,
-  "publishedAt": "2026-09-18T18:34:26Z"
+  "apkSize": 76652429,
+  "publishedAt": "2026-09-19T15:21:47Z"
 }
