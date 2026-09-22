@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 202,
-  "versionName": "2.0.2",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.2/VirtualRegion-2.0.2.apk",
+  "versionCode": 203,
+  "versionName": "2.0.3",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.3/VirtualRegion-2.0.3.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "59ebbbf32507a1ee2c6f4cab722051d8d2e0d44c9d4d355cc280a9a7c03bf6ff",
+  "sha256": "f698225e9d6b64c6730383862e16c7e7f567d659fce7583f573234cabfcb1957",
   "releaseNotes": {
-    "zh-CN": "- 虚拟相机支持一次导入多个视频或多张图片，可在媒体列表或设置页快捷切换悬浮窗中点击切换。\n- 优化媒体切换衔接，切换时保留上一帧，减少卡顿和黑屏。\n- 修复路线模拟目标应用列表搜索框无法唤起键盘的问题。",
-    "en": "- Virtual Camera can now import multiple videos or images at once and switch between them from the media list or the quick-switch overlay in Settings.\n- Improved media transitions by retaining the previous frame while switching, reducing stalls and black frames.\n- Fixed the Route Simulation target-app search field not opening the keyboard."
+    "zh-CN": "- 优化授权状态的后台恢复，长时间未打开管理器后也能更可靠地恢复已授权功能。\n- 修复 Android 14 及更高版本部分系统上悬浮窗服务启动导致管理器崩溃的问题。\n- 改进虚拟视频和音频的播放稳定性、网络流缓冲与切换流畅度，并新增崩溃日志查看和导出。",
+    "en": "- Improved background authorization recovery so enabled features resume more reliably after the manager has not been opened for a while.\n- Fixed manager crashes when starting overlay services on some Android 14 and newer system versions.\n- Improved virtual video and audio playback stability, network-stream buffering, and switching smoothness, and added crash-log viewing and export."
   },
-  "apkSize": 76652429,
-  "publishedAt": "2026-09-19T15:21:47Z"
+  "apkSize": 76799885,
+  "publishedAt": "2026-09-22T17:34:00Z"
 }
