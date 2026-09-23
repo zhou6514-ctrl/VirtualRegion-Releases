@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 203,
-  "versionName": "2.0.3",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.3/VirtualRegion-2.0.3.apk",
+  "versionCode": 204,
+  "versionName": "2.0.4",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.4/VirtualRegion-2.0.4.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "f698225e9d6b64c6730383862e16c7e7f567d659fce7583f573234cabfcb1957",
+  "sha256": "9152938416488963dff9993bcd9930813b08a5480466321da492f38b6d3c1cb8",
   "releaseNotes": {
-    "zh-CN": "- 优化授权状态的后台恢复，长时间未打开管理器后也能更可靠地恢复已授权功能。\n- 修复 Android 14 及更高版本部分系统上悬浮窗服务启动导致管理器崩溃的问题。\n- 改进虚拟视频和音频的播放稳定性、网络流缓冲与切换流畅度，并新增崩溃日志查看和导出。",
-    "en": "- Improved background authorization recovery so enabled features resume more reliably after the manager has not been opened for a while.\n- Fixed manager crashes when starting overlay services on some Android 14 and newer system versions.\n- Improved virtual video and audio playback stability, network-stream buffering, and switching smoothness, and added crash-log viewing and export."
+    "zh-CN": "- 新增环境多选管理：在地图页长按环境即可进入，支持全选、清空选择和批量删除，并保护正在使用的环境。\n- 地址搜索优先匹配本地环境名称，点击结果可快速定位到列表中的环境。\n- 蓝牙广播数据支持编辑和 SCANRES 自动计算，改善部分系统的蓝牙扫描兼容性。\n- 路线模拟速度上限提高至 400 km/h。\n- 修复长时间未打开管理器后虚拟数据失效的问题，改进授权状态同步。\n- 改进大型环境数据的完整同步，避免数据被截断。",
+    "en": "- Added environment multi-selection: long-press an environment on the map page to select all, clear selections, or delete selected environments, with protection for environments in use.\n- Address search now prioritizes local environment names; tap a result to locate it in the list.\n- Added editable Bluetooth advertisement data and automatic SCANRES calculation, with improved scan compatibility on some systems.\n- Increased the route simulation speed limit to 400 km/h.\n- Fixed virtual data becoming unavailable after the manager had not been opened for a long time, and improved authorization status synchronization.\n- Improved synchronization of large environment datasets without truncation."
   },
-  "apkSize": 76799885,
-  "publishedAt": "2026-09-22T17:34:00Z"
+  "apkSize": 76832653,
+  "publishedAt": "2026-09-23T16:58:38Z"
 }
