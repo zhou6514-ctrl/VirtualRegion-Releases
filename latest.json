@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 205,
-  "versionName": "2.0.5",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.5/VirtualRegion-2.0.5.apk",
+  "versionCode": 206,
+  "versionName": "2.0.6",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.6/VirtualRegion-2.0.6.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "a6f23916ebcda5e03d9147f13b8c022fea784e7e5cc1706f92d33805caf0b1fe",
+  "sha256": "780c87ed4fc146f93375e1ab94474ecfb864a8fb9c6d088b0707dc78dd3a7a00",
   "releaseNotes": {
-    "zh-CN": "- 环境、GPS 摇杆、路线和媒体悬浮窗支持拖动边缘或四角调整大小。\n- 窗口内控件和文字随窗口大小自适应，各窗口独立记忆尺寸，最小化后可恢复。\n- 改进横竖屏切换时的窗口边界适配，增加无障碍放大和缩小操作。",
-    "en": "- Resize environment, GPS joystick, route, and media floating windows by dragging their edges or corners.\n- Controls and text adapt to the window size. Each window remembers its size and restores it after minimizing.\n- Improved window bounds when switching orientation and added accessible enlarge and shrink actions."
+    "zh-CN": "- 隐藏应用列表顶部新增说明，帮助理解勾选后对其他应用的可见性。\n- 改善授权自动刷新与恢复，减少长时间未打开管理端后 SIM 等功能失效的情况。",
+    "en": "- Added an explanation at the top of the hidden apps list to clarify how selected apps are hidden from other apps.\n- Improved automatic authorization renewal and recovery for SIM and other features when the manager has not been opened for a long time."
   },
   "apkSize": 76849037,
-  "publishedAt": "2026-09-27T16:29:52Z"
+  "publishedAt": "2026-09-29T15:35:29Z"
 }
