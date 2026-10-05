@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 206,
-  "versionName": "2.0.6",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.6/VirtualRegion-2.0.6.apk",
+  "versionCode": 207,
+  "versionName": "2.0.7",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.7/VirtualRegion-2.0.7.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "780c87ed4fc146f93375e1ab94474ecfb864a8fb9c6d088b0707dc78dd3a7a00",
+  "sha256": "1c875d7a82c565b840a9b9440008747b0e8b731ba0114fb00ba7b77f6d193095",
   "releaseNotes": {
-    "zh-CN": "- 隐藏应用列表顶部新增说明，帮助理解勾选后对其他应用的可见性。\n- 改善授权自动刷新与恢复，减少长时间未打开管理端后 SIM 等功能失效的情况。",
-    "en": "- Added an explanation at the top of the hidden apps list to clarify how selected apps are hidden from other apps.\n- Improved automatic authorization renewal and recovery for SIM and other features when the manager has not been opened for a long time."
+    "zh-CN": "修复部分bug",
+    "en": "Fixed some bugs."
   },
-  "apkSize": 76849037,
-  "publishedAt": "2026-09-29T15:35:29Z"
+  "apkSize": 76849093,
+  "publishedAt": "2026-10-05T15:44:23Z"
 }
