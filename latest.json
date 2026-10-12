@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 207,
-  "versionName": "2.0.7",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.7/VirtualRegion-2.0.7.apk",
+  "versionCode": 208,
+  "versionName": "2.0.8",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.8/VirtualRegion-2.0.8.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "1c875d7a82c565b840a9b9440008747b0e8b731ba0114fb00ba7b77f6d193095",
+  "sha256": "8c882ec77e2dca11a3dcbddb33da82ddbc992629291cb67d005d6739b3493811",
   "releaseNotes": {
-    "zh-CN": "修复部分bug",
-    "en": "Fixed some bugs."
+    "zh-CN": "- 优化应用列表加载速度，减少重复加载。\n- 首页快捷应用将当前环境已启用的应用置顶并默认勾选，取消勾选后保存即可关闭该应用配置。",
+    "en": "- Faster app lists with less repeated loading.\n- Quick Apply places apps enabled for the current environment first and preselects them. Deselect an app and save to disable its configuration."
   },
-  "apkSize": 76849093,
-  "publishedAt": "2026-10-05T15:44:23Z"
+  "apkSize": 76881861,
+  "publishedAt": "2026-10-12T05:32:50Z"
 }
