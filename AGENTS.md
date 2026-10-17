@@ -7,7 +7,10 @@ release documentation plus `latest.json`.
 - Upload APK binaries as GitHub Release assets.
 - Publish through the script declared by the matching machine contract so the release asset and
   `latest.json` remain consistent.
-- Do not change an APK version on behalf of the user.
+- Do not independently change an APK version in this repository. Ordinary version advancement is
+  owned by the explicitly requested source-repository publish workflow before it invokes the
+  publisher. An explicitly requested same-version asset replacement keeps the existing version,
+  title, notes, and tags.
 - Accept only the final APK produced by the source repository's nmmp release script. Before any
   release, require valid APK signing, 16 KiB zip alignment, `libnmmp.so` and `libnmmvm.so` stored
   without compression for every packaged nmmp ABI, and build metadata proving at least the
