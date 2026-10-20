@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 209,
-  "versionName": "2.0.9",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.0.9/VirtualRegion-2.0.9.apk",
+  "versionCode": 210,
+  "versionName": "2.1.0",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.1.0/VirtualRegion-2.1.0.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "014b13d97d034d0a28dd00a3683b33aff20ee2669cb77be1b85f6fb4bab0a92c",
+  "sha256": "0ec7fb344542e2187c879302ffbe3c9c19084caede5224cedfda5e9bc794b48a",
   "releaseNotes": {
-    "zh-CN": "- 修复系统应用的独立位置环境配置不生效问题，全局模式仍排除系统应用。",
-    "en": "- Fixed per-app location environments for system apps. Global mode continues to exclude system apps."
+    "zh-CN": "优化授权逻辑",
+    "en": "Optimized authorization logic"
   },
-  "apkSize": 76881861,
-  "publishedAt": "2026-10-12T18:50:47Z"
+  "apkSize": 76042201,
+  "publishedAt": "2026-10-20T15:47:16Z"
 }
