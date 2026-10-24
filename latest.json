@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 210,
-  "versionName": "2.1.0",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.1.0/VirtualRegion-2.1.0.apk",
+  "versionCode": 211,
+  "versionName": "2.1.1",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.1.1/VirtualRegion-2.1.1.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "0ec7fb344542e2187c879302ffbe3c9c19084caede5224cedfda5e9bc794b48a",
+  "sha256": "8c555478c86e159aa5e213701ec38e0ae814e975fe2b150438308918a73bf58b",
   "releaseNotes": {
-    "zh-CN": "优化授权逻辑",
-    "en": "Optimized authorization logic"
+    "zh-CN": "环境广场支持在地图上预览公有和私有环境的位置，无需导入。",
+    "en": "Preview public and private environment locations on the map without importing them."
   },
   "apkSize": 76042201,
-  "publishedAt": "2026-10-20T15:47:16Z"
+  "publishedAt": "2026-10-24T07:13:03Z"
 }
