@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 211,
-  "versionName": "2.1.1",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.1.1/VirtualRegion-2.1.1.apk",
+  "versionCode": 212,
+  "versionName": "2.1.2",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.1.2/VirtualRegion-2.1.2.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "8c555478c86e159aa5e213701ec38e0ae814e975fe2b150438308918a73bf58b",
+  "sha256": "28ce6b7e588205196f7dcf9fcddf189a0589e14e9d8fa426aa05d35cb2943e84",
   "releaseNotes": {
-    "zh-CN": "环境广场支持在地图上预览公有和私有环境的位置，无需导入。",
-    "en": "Preview public and private environment locations on the map without importing them."
+    "zh-CN": "新增无需opencellid key的基站获取接口数据较少如有需求也可自行设置opencellid key获取更多基站信息，修复在安卓17设备的一些问题，修复bug若干",
+    "en": "Added a cell lookup endpoint that works without an OpenCellID key. Data coverage is limited; you can configure your own OpenCellID key to retrieve more cell tower information. Fixed some issues on Android 17 devices and various bugs."
   },
   "apkSize": 76042201,
-  "publishedAt": "2026-10-24T07:13:03Z"
+  "publishedAt": "2026-10-27T14:50:45Z"
 }
