@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 212,
-  "versionName": "2.1.2",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.1.2/VirtualRegion-2.1.2.apk",
+  "versionCode": 213,
+  "versionName": "2.1.3",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.1.3/VirtualRegion-2.1.3.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "28ce6b7e588205196f7dcf9fcddf189a0589e14e9d8fa426aa05d35cb2943e84",
+  "sha256": "a96067d170f708efd0f55b7b20a36b05d76e0a1deee017e6f1795ac226b55c16",
   "releaseNotes": {
-    "zh-CN": "新增无需opencellid key的基站获取接口数据较少如有需求也可自行设置opencellid key获取更多基站信息，修复在安卓17设备的一些问题，修复bug若干",
-    "en": "Added a cell lookup endpoint that works without an OpenCellID key. Data coverage is limited; you can configure your own OpenCellID key to retrieve more cell tower information. Fixed some issues on Android 17 devices and various bugs."
+    "zh-CN": "环境广场新增名称和地区搜索，地图预览更快捷。\n环境页集中展示已保存列表，支持列表内多选删除，添加环境进入地图。\n采集时同步海拔，选点保存可填写海拔；留空时保留真实 GPS 海拔。",
+    "en": "Search the environment plaza by name or region and preview locations directly.\nManage saved environments in a dedicated list with multi-select deletion, and add environments from the map.\nCapture altitude and optionally set it when saving a map point. Leave it blank to keep the real GPS altitude."
   },
-  "apkSize": 76042201,
-  "publishedAt": "2026-10-27T14:50:45Z"
+  "apkSize": 76140673,
+  "publishedAt": "2026-10-31T21:23:14Z"
 }
