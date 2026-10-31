@@ -18,7 +18,7 @@ VirtualRegion 是一款面向 LSPosed 的手机环境虚拟化工具。它可以
 需要多台手机、反复改设置的工作，整理成一套可保存、可复用、可快速切换的配置。新手也不用面对
 一堆难懂参数：先建环境，再选应用，最后点应用即可。
 
-当前版本：[2.0.1](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/201-2.0.1)
+当前版本：[2.1.3](https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/tag/v2.1.3)
 
 当前正式 APK 仅支持 `arm64-v8a` 与 `armeabi-v7a` Android 设备，不再提供 `x86` 或 `x86_64`
 安装包。
@@ -133,7 +133,7 @@ For compatibility testing, regional UI checks, route demonstrations, or camera-i
 VirtualRegion turns repeated device changes into reusable profiles. The workflow is simple: create
 an environment, choose the apps, and apply it.
 
-Current version: [2.0.1](https://github.com/Xposed-Modules-Repo/io.github.zhou6514ctrl.virtualregion/releases/tag/201-2.0.1)
+Current version: [2.1.3](https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/tag/v2.1.3)
 
 Current release APKs support `arm64-v8a` and `armeabi-v7a` Android devices only. `x86` and
 `x86_64` packages are no longer provided.
