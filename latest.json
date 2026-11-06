@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 213,
-  "versionName": "2.1.3",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.1.3/VirtualRegion-2.1.3.apk",
+  "versionCode": 214,
+  "versionName": "2.1.4",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.1.4/VirtualRegion-2.1.4.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "a96067d170f708efd0f55b7b20a36b05d76e0a1deee017e6f1795ac226b55c16",
+  "sha256": "d393b3cf2356a53924f4776797a3f62034c492e8c096467ec89e1d07b5151b6d",
   "releaseNotes": {
-    "zh-CN": "环境广场新增名称和地区搜索，地图预览更快捷。\n环境页集中展示已保存列表，支持列表内多选删除，添加环境进入地图。\n采集时同步海拔，选点保存可填写海拔；留空时保留真实 GPS 海拔。",
-    "en": "Search the environment plaza by name or region and preview locations directly.\nManage saved environments in a dedicated list with multi-select deletion, and add environments from the map.\nCapture altitude and optionally set it when saving a map point. Leave it blank to keep the real GPS altitude."
+    "zh-CN": "主页新增虚拟 GPS、蓝牙、Wi-Fi 和基站总开关，关闭时保留应用配置。\n环境多选删除支持已配置环境，并同步清除关联应用配置。\n改善本地视频播放流畅度和相机录像兼容性。\n修复录像声音替换，新增可选的麦克风混音。",
+    "en": "Control virtual GPS, Bluetooth, Wi-Fi and cell data with a Home master switch while keeping saved app settings.\nDelete configured environments in multi-select mode and remove their linked app settings together.\nImprove local video playback smoothness and camera recording compatibility.\nFix recorded audio replacement and add optional microphone mixing."
   },
-  "apkSize": 76140673,
-  "publishedAt": "2026-10-31T21:23:14Z"
+  "apkSize": 76877953,
+  "publishedAt": "2026-11-06T08:25:53Z"
 }
