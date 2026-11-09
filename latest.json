@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "versionCode": 214,
-  "versionName": "2.1.4",
-  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.1.4/VirtualRegion-2.1.4.apk",
+  "versionCode": 215,
+  "versionName": "2.1.5",
+  "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.1.5/VirtualRegion-2.1.5.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "d393b3cf2356a53924f4776797a3f62034c492e8c096467ec89e1d07b5151b6d",
+  "sha256": "cb9f7339b0aa33ee0bcb00b74d79aab5f66058ca9c804cebf750ae1a17791a76",
   "releaseNotes": {
-    "zh-CN": "主页新增虚拟 GPS、蓝牙、Wi-Fi 和基站总开关，关闭时保留应用配置。\n环境多选删除支持已配置环境，并同步清除关联应用配置。\n改善本地视频播放流畅度和相机录像兼容性。\n修复录像声音替换，新增可选的麦克风混音。",
-    "en": "Control virtual GPS, Bluetooth, Wi-Fi and cell data with a Home master switch while keeping saved app settings.\nDelete configured environments in multi-select mode and remove their linked app settings together.\nImprove local video playback smoothness and camera recording compatibility.\nFix recorded audio replacement and add optional microphone mixing."
+    "zh-CN": "改善位置采集的海拔获取，修正默认零值显示。\n优先使用实时海拔，未获取时使用系统最近一次有效缓存，并标注来源。",
+    "en": "Improve altitude collection and correct default zero readings.\nUse live altitude first, fall back to the last valid system cache when unavailable, and show its source."
   },
   "apkSize": 76877953,
-  "publishedAt": "2026-11-06T08:25:53Z"
+  "publishedAt": "2026-11-09T12:49:27Z"
 }
