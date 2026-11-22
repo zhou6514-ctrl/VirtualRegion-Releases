@@ -4,7 +4,7 @@
   "versionName": "2.1.6",
   "apkUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/download/v2.1.6/VirtualRegion-2.1.6.apk",
   "releasePageUrl": "https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/latest",
-  "sha256": "c67c1d63856f094aba12238301657a44112b34d1eca04af6fee3854722bfbbf6",
+  "sha256": "8663249a7f2c4e15a7e7753ed07b5c9676549a72cd83d52da4a05c86d981006b",
   "releaseNotes": {
     "zh-CN": "• 模拟 Wi-Fi 在手机未连接 Wi-Fi 时仍显示已连接，延用所选虚拟网络。\n• 全局模拟可纳入指定系统应用。环境列表支持输入即搜，删除环境会自动清理关联应用配置。\n• 新增步行、跑步和驾车动作模拟，随路线速度调整动作频率。\n• 改善启动时的设置同步和 Xposed 兼容性。",
     "en": "• Simulated Wi-Fi shows as connected even when the phone is disconnected, using the selected virtual network.\n• Include selected system apps in global simulation. Filter environments as you type and clear linked app settings when deleting an environment.\n• Walking, running, and driving motion profiles follow the route playback speed.\n• Improve startup synchronization and Xposed compatibility."
