@@ -1,6 +1,10 @@
 # VirtualRegion
 
-[中文](#中文) | [English](#english)
+**用一台 Android 设备复现位置、网络和相机测试场景。**
+
+**Reproduce location, wireless, and camera test scenarios on one Android device.**
+
+[中文](#中文) · [English](#english) · [下载 / Download 2.1.6](https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/tag/v2.1.6)
 
 > [!WARNING]
 > **使用地区限制 / Regional Usage Restriction**
@@ -11,230 +15,94 @@
 
 ## 中文
 
-VirtualRegion 是一款面向 LSPosed 的手机环境虚拟化工具。它可以让不同应用看到各自独立的
-位置、网络、手机卡、蓝牙、语言、时区和媒体内容，而不会把整台手机粗暴地改成同一套数据。
+VirtualRegion 是面向 LSPosed 的 Android 环境模拟工具。测试多语言界面、复现网络条件、演示移动路线，或给相机应用一段可重复的输入，都可以使用保存好的配置。选好场景、应用给目标，再用同一套条件复测。
 
-如果你经常做应用兼容测试、跨地区界面检查、路线演示或相机输入测试，VirtualRegion 能把原本
-需要多台手机、反复改设置的工作，整理成一套可保存、可复用、可快速切换的配置。新手也不用面对
-一堆难懂参数：先建环境，再选应用，最后点应用即可。
+[下载 VirtualRegion 2.1.6](https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/tag/v2.1.6) · [查看版本历史](https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases) · [Telegram 社区](https://t.me/VirtualRegion)
 
-当前版本：[2.1.5](https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/tag/v2.1.5)
+### 构建场景，保存后随时复用
 
-当前正式 APK 仅支持 `arm64-v8a` 与 `armeabi-v7a` Android 设备，不再提供 `x86` 或 `x86_64`
-安装包。
+- **环境与地图**　用高德或 Google 地图搜索地点、点选位置、输入 WGS-84 坐标，也可以一键回到真实位置。地图定位超时时可回退到 Android 系统定位。采集设备附近的 Wi-Fi、基站、经典蓝牙和 BLE，或在地图选点生成 Wi-Fi 数据、查询附近基站。设置 GPS 抖动幅度，复现小范围的位置漂移。海拔优先使用实时结果，采用最近有效缓存时会标注来源。
+- **管理与迁移**　位置和无线数据保存在同一份环境中，支持预览、编辑、重命名、导入、导出、快速应用和多选整理。可导入 Fake Location 的环境文件，或将系统保存的 SSID、加密类型等 Wi-Fi 数据加入环境。地图提供方及基站查询范围可在设置中调整。
+- **环境广场**　按名称或地区搜索公开与私密环境，先在地图预览位置，再通过分享码或列表导入，也可分享自己的环境。常用场景留在本地，按需要应用。
 
-### 你可以用它做什么
+### 让位置和连接一起变化
 
-#### 环境与地图
+- **独立应用与全局模拟**　可为应用单独选择环境或路线，逐项控制 GPS、Wi-Fi、基站和蓝牙，按需启用严格隔离。主空间、双开和工作资料可以分别配置。支持应用搜索、筛选和快捷切换。全局模式适合多个应用共用同一场景，工作台总开关可保留配置并暂停或恢复环境模拟。
+- **Wi-Fi、基站与蓝牙**　自定义 Wi-Fi 扫描列表、连接网络和信号，按信号自动选网，也可手动指定。为测试环境保存不同制式的基站记录，配置蓝牙设备、已绑定设备列表及 BLE 广播内容。需要复现扫描细节时，可编辑原始广播数据和扫描响应。
+- **路线模拟**　在地图规划起终点，或录制真实路线，保存后可预览。录制可暂停、继续和恢复中断。为指定应用或全局范围选择路线并开始播放，随时暂停、继续、停止、调速、循环，或从当前位置重新规划终点。播放时可同步位置、Wi-Fi、基站和支持的卫星状态。GPS 摇杆可即时控制方向和速度。
 
-- 在地图上点选位置、搜索地点或直接输入坐标，也能一键回到真实位置。
-- 保存多个环境，每个环境可以同时包含位置、Wi-Fi、基站和蓝牙信息。
-- 从当前手机采集真实环境，减少手工填写；环境支持重命名、编辑、删除、导入和导出。
-- 支持导入 Fake Location 环境导出文件；缺少 Wi-Fi 加密字段的旧数据也会兼容处理。
-- 长按已保存环境即可快速应用；新增环境后也能直接选择要应用到哪些目标。
-- 支持按应用生效，也支持全局环境模式。预览、保存和真正应用分开，不容易误操作。
-- 环境广场支持浏览、搜索、分享和通过分享码导入环境，喜欢的配置可以先收藏到本地再决定是否使用。
+### 把边界场景也纳入测试
 
-#### 路线模拟
+- **SIM 与地区**　按订阅配置实体 SIM 或 eSIM 的测试数据，包括运营商、IMSI、ICCID、号码和信号。无实体 SIM 时可一键创建虚拟配置。语言和时区支持为应用分别设置、按地区模板应用及恢复系统值，可按国家、城市、语言代码或时区查找。
+- **应用可见性**　按名称或包名搜索，并按 Android 用户空间设置隐藏应用列表，复现普通应用遇到依赖缺失的场景。页面可查看保存与生效状态，随时调整选择。
+- **虚拟媒体**　把 RTSP、RTMP 网络流或本地视频和照片用作兼容应用的相机输入。可独立控制预览、拍照和麦克风替换，兼容录像链路支持媒体音轨及麦克风混音。支持前后摄像头切换时的画面方向适配，网络流加载时显示占位画面。照片模式保留真实麦克风，媒体不可用时回退到真实输入。
 
-- 先选择精确目标应用或全局范围，再选择路线；应用路线默认开启 GPS、Wi-Fi、基站和严格隔离，
-  配置发布成功后才能启动。
-- 可在地图选择起点与终点后自动规划，完成时输入名称保存，也可通过真实移动录制创建路线。
-- 路线支持预览、绑定、启动、暂停、继续、停止、调速、循环和中断恢复。
-- 可从当前暂停或停止位置重新设置终点并规划新路线；尚未开始的路线也能正常修改。
-- 路线录制支持暂停、继续和停止保存，关闭录制弹窗不会自动丢弃正在进行的会话。
-- 播放路线时可同步位置、Wi-Fi、基站和卫星状态，让移动过程更连贯。
-- 管理器页面与路线控制悬浮窗共享运行状态和命令，任一入口的操作都会同步显示。
+### 快捷操作和可见的运行状态
 
-#### 按应用独立配置
+- **四个悬浮窗**　让测试应用保持前台，直接切换环境、操作 GPS 摇杆、控制路线或切换多段视频和图片。悬浮窗可随时收起，路线控制与管理器保持同步。
+- **工作台与外观**　通过工作台、环境、应用、路线和更多入口定位常用功能，侧栏提供全部入口。配置编辑支持草稿恢复。支持浅色、深色及跟随系统，管理器可独立切换 18 种界面语言。
+- **同步与诊断**　在状态页查看系统服务和配置同步进度，同步遇到问题时可重试。日志可筛选、复制和导出，崩溃报告可单独查看。管理器内置更新检查和下载入口。
 
-- 每个应用都能单独选择环境或路线，并分别控制位置、Wi-Fi、基站、蓝牙等项目。
-- 通过 UID、用户空间和包名区分主应用、双开应用与工作资料，不会只看名字混在一起。
-- 支持应用搜索、系统应用筛选和全局模式；已启用项会优先显示。
-- GPS 自然抖动可以模拟小范围的真实漂移，偏移距离可调，也能随时恢复默认值。
+### 2.1.6 新功能
 
-#### 隐藏应用列表
+- 环境列表输入即搜。单条或批量删除时，清理关联应用配置、解除路线关联并停止对应模拟。
+- 在应用管理的全局配置中打开「系统应用生效范围」，勾选要使用全局环境的系统应用。模拟 Wi-Fi 可在手机未连接 Wi-Fi 时向目标应用呈现选定网络的已连接状态。
+- 路线播放时可开启全局动作模拟，选择步行、跑步或驾车。加速度计、线性加速度和陀螺仪的波形频率随实时速度变化。播放停止后恢复原始动作数据。该功能适用于兼容设备上的普通传感器事件。
+- 改善启动时的设置同步和 Xposed 兼容性。
 
-- 按名称或包名搜索应用，并按 Android 用户空间分别选择要隐藏的软件。
-- 被选中的包对普通非系统应用表现为不可见或不存在，系统组件仍保留原有查询结果。
-- 页面显示本地保存、配置发布、system_server 和 Hook 状态；新增隐藏项需要有效授权，已有选择
-  仍可随时取消。
+### 快速上手
 
-#### SIM、语言与时区
+1. 在已 Root、支持 `arm64-v8a` 或 `armeabi-v7a` 的 Android 11 及以上设备上安装 APK，使用支持 Modern Xposed API 102 的框架启用模块。
+2. 按模块推荐设置系统作用域。需要 SIM、语言与时区或虚拟媒体时，把相关目标应用加入 LSPosed 作用域。
+3. 重启设备，打开 VirtualRegion 并按提示完成授权。
+4. 保存一个环境或路线，选择目标，应用后在运行状态页确认配置已同步。对使用缓存的功能，重新打开目标应用以读取新配置。
 
-- 可设置应用看到的 SIM/eSIM、IMSI、ICCID、手机号、运营商、信号和基站信息。
-- 没有实体 SIM 时也能创建独立的虚拟 SIM 配置。
-- 语言和时区可以分别设置，也可一次设置两项或一键恢复跟随系统。
-- 列表只显示已经加入 LSPosed 作用域的应用，支持搜索和显示系统应用，目标更容易找。
-- 管理器界面语言与目标应用的虚拟语言完全独立，改其中一个不会连带修改另一个。
-
-#### 虚拟媒体
-
-- 支持 RTSP 与 RTMP 网络视频流，也支持手机里的本地视频和照片。
-- 可分别替换应用的相机预览、录像画面、拍照结果和麦克风输入。
-- 网络流首帧到达前显示加载画面，减少短暂露出真实相机画面的情况。
-- 针对不同相机应用处理画面方向，改善前后摄像头切换、录制卡顿、声音杂音等体验。
-- 照片输入模式保留真实麦克风；视频和网络流可使用媒体中的声音。
-- 只展示已加入 LSPosed 作用域的目标应用，已启用应用排在前面。
-- 媒体无法读取或解码失败时会回退真实相机和麦克风，避免拖垮目标应用。
-
-#### 更顺手的管理器
-
-- 全新侧滑导航，环境、路线、运行状态、应用、环境广场、作用域功能和设置都能直接进入。
-- 支持浅色、深色和跟随系统主题，并处理状态栏、手势区域和横竖屏显示。
-- 提供 18 种界面语言：简体中文、繁體中文、English、日本語、한국어、Русский、Español、
-  Português（Brasil/Portugal）、Français、Deutsch、Italiano、Bahasa Indonesia、Tiếng Việt、ไทย、
-  हिन्दी、العربية 和 Türkçe。
-- 环境快捷切换、GPS 摇杆和路线控制三个悬浮窗可按需开启，最小化后不遮挡主要画面。
-- 运行状态页集中显示服务状态、配置发送结果、日志和诊断，出现问题时更容易找到原因。
-- 内置版本检查，有新版本时会展示更新内容并提供下载入口。
-- 地图 SDK 无法取得真实定位时会自动尝试 Android 系统定位，减少单一提供方超时造成的失败。
-
-### 小白安装步骤
-
-1. 从本页 Release 下载最新 APK 并安装。
-2. 打开 LSPosed，在“模块”中启用 VirtualRegion。
-3. 按模块提示勾选系统作用域；需要使用 SIM、语言/时区或虚拟媒体时，再勾选对应目标应用。
-4. 重启手机，让系统服务加载新模块。
-5. 打开 VirtualRegion，按提示完成授权。
-6. 进入“环境与地图”创建环境，然后在应用管理或快捷应用面板选择目标应用。
-7. 保存并应用后，彻底关闭再重新打开目标应用。
-
-第一次使用建议先选一个不重要的测试应用。不同品牌、Android 版本和相机实现可能存在差异；
-VirtualRegion 提供状态与诊断工具，但“已经保存”不一定等于目标应用进程已经重新读取配置，必要时
-请重启目标应用或手机。
-
-### 为什么值得试试
-
-- **少折腾：** 常用环境、路线和媒体源保存一次即可反复使用。
-- **更精细：** 不同应用可以看到不同配置，主应用、双开和工作资料也能分别处理。
-- **看得懂：** 新界面把“保存了什么、应用给谁、是否已经发送”分开显示。
-- **用途更完整：** 从固定位置、移动路线到相机与麦克风输入，一套工具覆盖更多测试场景。
-- **失败可回退：** 配置缺失或媒体加载失败时优先保留真实系统行为，降低目标应用异常概率。
-
-### 获取更新和帮助
-
-Telegram：[https://t.me/VirtualRegion](https://t.me/VirtualRegion)
-
-### 使用提醒
-
-请只在自己拥有的设备，或已经得到设备与应用所有者明确许可的测试环境中使用。请勿用于欺骗、
-身份冒用、规避访问控制、盗取信息、干扰他人或任何违法用途。
+具体支持范围取决于 Android 版本、厂商 ROM 及应用使用的接口。请在自有设备或明确授权的测试环境中使用。
 
 ---
 
 ## English
 
-VirtualRegion is an LSPosed environment virtualization tool. It lets different apps see their own
-location, network, SIM, Bluetooth, language, time zone, and media inputs without forcing one global
-set of values on the entire phone.
+VirtualRegion is an Android environment simulation tool for LSPosed. Test localized interfaces, reproduce wireless conditions, demonstrate a route, or feed a repeatable clip to a camera app. Save the setup, apply it to your test targets, and reuse it on the next run.
 
-For compatibility testing, regional UI checks, route demonstrations, or camera-input testing,
-VirtualRegion turns repeated device changes into reusable profiles. The workflow is simple: create
-an environment, choose the apps, and apply it.
+[Download VirtualRegion 2.1.6](https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/tag/v2.1.6) · [Release history](https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases) · [Telegram community](https://t.me/VirtualRegion)
 
-Current version: [2.1.5](https://github.com/zhou6514-ctrl/VirtualRegion-Releases/releases/tag/v2.1.5)
+### Build a scenario once and reuse it
 
-Current release APKs support `arm64-v8a` and `armeabi-v7a` Android devices only. `x86` and
-`x86_64` packages are no longer provided.
+- **Environments and maps.** Search AMap or Google Maps, pick a location, enter WGS-84 coordinates, or return to the real location. Android location can provide a fallback on map location timeouts. Capture nearby Wi-Fi, cell, classic Bluetooth, and BLE data, or use a map selection to generate Wi-Fi entries and look up nearby cells. Adjust natural GPS drift. Altitude capture uses a live reading when available and labels a recent cached reading when used.
+- **Manage and move profiles.** Keep location and wireless data in one saved environment. Preview, edit, rename, import, export, apply quickly, or select multiple environments for cleanup. Bring over Fake Location exports or add SSIDs and security types from saved system Wi-Fi networks. Choose the map provider and adjust the cell lookup radius in Settings.
+- **Environment Plaza.** Search public and private environments by name or region, preview the location on a map, import from the list or with a share code, and share your own profiles. Keep useful profiles on the device until you need them.
 
-### What you can do
+### Move the location and wireless scene together
 
-#### Environments and maps
+- **Per-app and global simulation.** Choose an environment or route for each app, control GPS, Wi-Fi, cell, and Bluetooth individually, and enable strict isolation as needed. Configure primary, cloned, and work-profile instances separately. Search and filter apps to change a setup quickly. Use global mode for a shared scenario. The home switch pauses or resumes environment simulation while keeping your settings.
+- **Wi-Fi, cellular, and Bluetooth.** Set the Wi-Fi list, connection, and signal. Pick the connection by strength or choose it manually. Save cell records by radio technology, configure Bluetooth devices and bonded lists, and edit BLE advertisement and scan-response data.
+- **Route playback.** Plan a route with map endpoints or record real movement and preview the saved route. Recordings support pause, resume, and recovery. Play a route for selected apps or globally. Pause, resume, stop, adjust the speed, loop, or plan a new destination from the current position. Playback can coordinate location, Wi-Fi, cells, and supported satellite status. Use the GPS joystick for quick direction and speed changes.
 
-- Pick a place on the map, search for it, enter coordinates, or return to the real location.
-- Save multiple environments containing location, Wi-Fi, cell, and Bluetooth data.
-- Capture the current device environment and rename, edit, delete, import, or export profiles.
-- Import Fake Location environment exports, including older data without a Wi-Fi encryption field.
-- Long-press a saved environment for quick apply, or choose targets immediately after creating one.
-- Use per-app or global environment mode. Previewing, saving, and applying are kept separate.
-- Browse, search, share, and import profiles from Environment Plaza before choosing whether to apply them.
+### Cover the edge cases of app testing
 
-#### Route simulation
+- **SIM and regions.** Configure test data for individual physical SIM or eSIM subscriptions, including carrier, IMSI, ICCID, number, and signal. Create a virtual profile on devices without a SIM. Set each app’s language and time zone independently, choose a region template, or restore system defaults. Search by country, city, language code, or zone.
+- **App visibility.** Search by app or package name and manage hidden lists by Android user. Check how ordinary apps behave when a dependency appears unavailable. Review save and delivery status and adjust the selection when needed.
+- **Virtual Media.** Use RTSP or RTMP streams, local videos, or photos as camera input. Control preview, photo capture, and microphone replacement separately. Compatible recording paths can use media audio or mix in the microphone. Orientation adapts on supported front and rear cameras, and a loading frame covers network startup. Photo mode keeps the real microphone, and unavailable media falls back to real input.
 
-- Choose an exact target app or global scope first, then select a route. Applying a route enables
-  GPS, Wi-Fi, cell, and strict isolation by default, and playback stays disabled until publication succeeds.
-- Select start and destination points for automatic planning, then name and save the route, or record real movement.
-- Preview, bind, start, pause, resume, stop, change speed, choose a loop mode, and recover interrupted recordings.
-- Reroute from the current paused or stopped position, and edit routes that have not started yet.
-- Pause, resume, or stop and save route recording without losing an active session when its dialog closes.
-- Keep location, Wi-Fi, cell, and satellite status coordinated during playback.
-- Use the same synchronized runtime state and commands from the Manager page or optional floating window.
+### Quick controls and clear feedback
 
-#### Independent app profiles
+- **Four floating tools.** Switch environments, steer the GPS joystick, control route playback, or switch between saved videos and photos while the test app stays in front. Minimize each tool when finished. Route controls stay in sync with the Manager.
+- **Workspace and appearance.** Open the workspace, environments, apps, routes, and more from the main navigation, with the full feature list in the sidebar. Recover configuration drafts and choose light, dark, or system appearance. The Manager has 18 interface languages and its language can be set independently.
+- **Synchronization and diagnostics.** Check system service and configuration delivery status, retry synchronization, filter, copy, or export logs, and review crash reports. Built-in update checks provide release notes and a download link.
 
-- Give each app its own environment or route and enable location, Wi-Fi, cell, or Bluetooth separately.
-- Distinguish main-user, cloned, and work-profile apps by UID, user, and package identity.
-- Search apps, include system apps when needed, and use a dedicated global mode.
-- Add adjustable natural GPS jitter for more realistic small position changes.
+### New in 2.1.6
 
-#### Hidden Apps list
+- Filter saved environments as you type. Deleting one or multiple environments clears linked app settings, unlinks routes, and stops the affected simulation.
+- Open **System app scope** in the global policy settings to include selected system apps in global mode. Simulated Wi-Fi presents the selected network as connected to target apps even when the phone is disconnected from Wi-Fi.
+- Enable global motion simulation during route playback and choose walking, running, or driving. Accelerometer, linear acceleration, and gyroscope waveforms follow the live speed, with real readings restored after playback stops. This feature covers normal sensor event queues on compatible devices.
+- Improved configuration synchronization at startup and Xposed compatibility.
 
-- Search by app name or package and choose hidden packages separately for each Android user.
-- Selected packages appear unavailable to ordinary non-system apps while system components retain normal visibility.
-- Review local-save, publication, system_server, and Hook status. Adding a hidden package requires valid
-  authorization, while existing selections can always be removed.
+### Quick setup
 
-#### SIM, language, and time zone
+1. Install the APK on a rooted `arm64-v8a` or `armeabi-v7a` device with Android 11 or later. Enable the module in a framework that supports Modern Xposed API 102.
+2. Select the recommended system scope. Include the target apps that need SIM, language and time zone, or Virtual Media features in the LSPosed scope.
+3. Reboot, open VirtualRegion, and complete authorization.
+4. Save an environment or route, choose the target, apply it, and check configuration delivery in runtime status. Reopen the target app when it caches settings.
 
-- Configure the SIM/eSIM, IMSI, ICCID, phone number, carrier, signal, and cell data visible to apps.
-- Create a virtual SIM profile even when no physical SIM is inserted.
-- Set language and time zone separately, set both together, or restore system defaults in one tap.
-- Search a list containing only apps already included in the LSPosed scope.
-- Manager interface language is independent from the language virtualized for target apps.
-
-#### Virtual Media
-
-- Use RTSP or RTMP network streams, local videos, or local photos as media input.
-- Replace camera preview, recorded video, captured photos, and microphone input independently.
-- Show a loading frame before the first network frame to reduce brief real-camera exposure.
-- Improve orientation across camera apps, front-camera switching, recording smoothness, and audio quality.
-- Photo mode keeps the real microphone; video and network streams can use media audio.
-- Show only LSPosed-scoped target apps, with enabled apps listed first.
-- Fall back to the real camera and microphone if media loading or decoding fails.
-
-#### A friendlier manager
-
-- Open environments, routes, runtime status, apps, Environment Plaza, scoped features, and settings
-  directly from the new drawer navigation.
-- Choose light, dark, or system theme with system-bar and rotation support.
-- Use 18 interface languages, including Simplified and Traditional Chinese, English, Japanese,
-  Korean, Russian, Spanish, Brazilian and European Portuguese, French, German, Italian, Indonesian,
-  Vietnamese, Thai, Hindi, Arabic, and Turkish.
-- Enable optional environment switcher, GPS joystick, and route-control floating windows.
-- Review service status, configuration delivery, logs, and diagnostics in one place.
-- Receive a clear update prompt when a newer release is available.
-- Fall back to Android system location when the selected map SDK cannot obtain a real-location fix.
-
-### Beginner setup
-
-1. Download and install the latest APK from Releases.
-2. Open LSPosed and enable VirtualRegion under Modules.
-3. Select the recommended system scope. Also select target apps that need SIM fallback,
-   language/time-zone, or Virtual Media features.
-4. Restart the phone so system services load the module.
-5. Open VirtualRegion and complete authorization.
-6. Create an environment, then choose targets in App Management or Quick Apply.
-7. Save and apply, then fully close and reopen the target app.
-
-Start with a non-critical test app. Behavior can vary by phone brand, Android release, and camera
-implementation. A saved profile does not always mean an already-running target process has reloaded
-it, so restart the target app or device when needed.
-
-### Why try VirtualRegion
-
-- **Less repetition:** save environments, routes, and media sources once and reuse them.
-- **Fine-grained control:** configure different apps, clones, and work profiles independently.
-- **Clear feedback:** distinguish what is saved, who it applies to, and whether it was delivered.
-- **Broader workflows:** cover fixed locations, moving routes, camera content, and microphone input.
-- **Safe fallback:** missing profiles or failed media loads prefer real system behavior to reduce app failures.
-
-### Updates and help
-
-Telegram: [https://t.me/VirtualRegion](https://t.me/VirtualRegion)
-
-### Usage notice
-
-Use VirtualRegion only on devices you own or in test environments where the device and app owners
-have given clear permission. Do not use it for deception, impersonation, access-control bypass,
-data theft, disruption, or any illegal activity.
+Coverage depends on the Android version, ROM, and APIs used by the target app. Use VirtualRegion on your own devices or in an explicitly authorized test environment.
